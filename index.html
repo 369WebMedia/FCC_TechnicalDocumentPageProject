@@ -20,10 +20,10 @@
       <header>JS HTML DOM</header>
       <ul>
         <li>
-      <a class="nav-link" href="#Header_1">DOM Intro</a>
+      <a class="nav-link" href="#DOM-Intro">DOM Intro</a>
         </li>
         <li>
-      <a class="nav-link" href="#Header_2">Header 2</a>
+      <a class="nav-link" href="#DOM-Method">DOM Method</a>
         </li>
         <li>
       <a class="nav-link" href="#Header_3">Header 3</a>
@@ -37,7 +37,7 @@
       </ul>
     </nav>
     <main id="main-doc">
-      <section class="main-section" id="Header_1">
+      <section class="main-section" id="DOM-Intro">
         <header>JavaScript HTML DOM</header>
         <h2>What is the DOM? (Document Object Model)</h2>
         <p>The DOM is a W3C (World Wide Web Consortium) standard.</p>
@@ -58,19 +58,63 @@
           <li>The events for all HTML elements</li>
         </ul>
         <p>In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
+        <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+        <div class="img-div">
+          <p>The HTML DOM model is constructed as a tree of Objects:</p>
+          <img src="https://www.w3schools.com/js/pic_htmltree.gif">
+        </div>
+        <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</p>
+        <ul>
+          <li>JavaScript can change all the HTML elements in the page</li>
+          <li>JavaScript can change all the HTML attributes in the page</li>
+          <li>JavaScript can change all the CSS styles in the page</li>
+          <li>JavaScript can remove existing HTML elements and attributes</li>
+          <li>JavaScript can add new HTML elements and attributes</li>
+          <li>JavaScript can react to all existing HTML events in the page</li>
+          <li>JavaScript can create new HTML events in the page</li>
+        </ul>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
           greetMe("World");
         </code>
+
       </section>
-      <section class="main-section" id="Header_2">
-        <header>Header 2</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
+      <section class="main-section" id="DOM-Method">
+        <header>JavaScript - HTML DOM Methods</header>
+        <p>HTML DOM methods are actions you can perform (on HTML Elements).</p>
+        <p>HTML DOM properties are values (of HTML Elements) that you can set or change.</p>
+        <h2>The DOM Programming Interface</h2>
+        <p>The HTML DOM can be accessed with JavaScript (and with other programming languages).</p>
+        <p>In the DOM, all HTML elements are defined as objects.</p>
+        <p>The programming interface is the properties and methods of each object.</p>
+        <p>A property is a value that you can get or set (like changing the content of an HTML element).</p>
+        <p>A method is an action you can do (like add or deleting an HTML element).</p>
+
+        <div class="example-method">
+        <h3>Example</h3>
+        <p>The following example changes the content ( <code class="code-text">innerHTML</code> ) of the <code class="code-text">< p ></code> element with <code class="code-text">id="demo"</code> : </p>
+        <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jsnumbercolor" style="color:red">
+          </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello World!"</span>;<br>
+          </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        </div>
+        
+        <p>In the example above, <code class="code-text">getElementById</code> is a method, while <code class="code-text">innerHTML</code> is a property.</p>
+
+        <h2>The getElementById Method</h2>
+
+        <p>The most common way to access an HTML element is to use the <code class="code-text">id</code> of the element.</p>
+        <P>In the example above the <code class="code-text">getElementById</code> method used <code class="code-text">id="demo"</code> to find the element.</P>
+
+        <h2>The innerHTML Property</h2>
+        <p>The easiest way to get the content of an element is by using the <code class="code-text">innerHTML property.</code></p>
+        <p>The <code class="code-text">innerHTML</code>  property is useful for getting or replacing the content of HTML elements.</p>
+        <p>The <code class="code-text">innerHTML</code> property can be used to get or change any HTML element, including <code class="code-text">&lt;html&gt;</code> and <code class="code-text">&lt;body&gt;</code> .</p>
+
         <ul>
           <li>list item 1</li>
           <li>list item 2</li>
