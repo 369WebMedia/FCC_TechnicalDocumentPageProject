@@ -20,24 +20,49 @@
       <header>JS HTML DOM</header>
       <ul>
         <li>
-      <a class="nav-link" href="#DOM-Intro">DOM Intro</a>
-        </li>
-        <li>
-      <a class="nav-link" href="#DOM-Method">DOM Method</a>
-        </li>
-        <li>
-      <a class="nav-link" href="#Header_3">Header 3</a>
-        </li>
-        <li>
-      <a class="nav-link" href="#Header_4">Header 4</a>
-        </li>
-        <li>
-      <a class="nav-link" href="#Header_5">Header 5</a>
-        </li>
+          <a class="nav-link" href="#JavaScript_HTML_DOM">JavaScript HTML DOM</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Methods">JS HTML DOM Methods</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Document">JS HTML DOM Document</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Elements">JS HTML DOM Elements</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JS_HTML_DOM_Changing_HTML">JS HTML DOM Changing HTML</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JS_HTML_DOM_Changing_CSS">JS HTML DOM Changing CSS</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JS_HTML_DOM_Animation">JS HTML DOM Animation</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JS_HTML_DOM_Events">JS HTML DOM Events</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_EventListener">JS HTML DOM EventListener</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Navigation">JS HTML DOM Navigation</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Elements_(Nodes)">JS HTML DOM Elements (Nodes)</a>
+            </li>
+            <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Collections">JS HTML DOM Collections</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a>
+                </li>
       </ul>
     </nav>
     <main id="main-doc">
-      <section class="main-section" id="DOM-Intro">
+
+      <section class="main-section" id="JavaScript_HTML_DOM">
         <header>JavaScript HTML DOM</header>
         <h2>What is the DOM? (Document Object Model)</h2>
         <p>The DOM is a W3C (World Wide Web Consortium) standard.</p>
@@ -76,10 +101,10 @@
         <code>function greetMe(yourName) { alert("Hello " + yourName); }
           greetMe("World");
         </code>
-
       </section>
-      <section class="main-section" id="DOM-Method">
-        <header>JavaScript - HTML DOM Methods</header>
+
+      <section class="main-section" id="JS_HTML_DOM_Methods">
+        <header>JS HTML DOM Methods</header>
         <p>HTML DOM methods are actions you can perform (on HTML Elements).</p>
         <p>HTML DOM properties are values (of HTML Elements) that you can set or change.</p>
         <h2>The DOM Programming Interface</h2>
@@ -113,15 +138,298 @@
         <h2>The innerHTML Property</h2>
         <p>The easiest way to get the content of an element is by using the <code class="code-text">innerHTML property.</code></p>
         <p>The <code class="code-text">innerHTML</code>  property is useful for getting or replacing the content of HTML elements.</p>
-        <p>The <code class="code-text">innerHTML</code> property can be used to get or change any HTML element, including <code class="code-text">&lt;html&gt;</code> and <code class="code-text">&lt;body&gt;</code> .</p>
+        <br>
+        <p><span class="highlight">The <code class="code-text">innerHTML</code> property can be used to get or change any HTML element, including <code class="code-text">&lt;html&gt;</code> and <code class="code-text">&lt;body&gt;</code>.</span>
+        </p>
+      </section>
 
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+      <section class="main-section" id="JS_HTML_DOM_Document">
+        <header>JS HTML DOM Document</header>
+        <p>The HTML DOM document object is the owner of all other objects in your web page.</p>
+        <h2>The HTML DOM Document Object</h2>
+        <p>The document object represents your web page.</p>
+        <p>If you want to access any element in an HTML page, you always start with accessing the document object.</p>
+        <br>
+
+        <p>Below are some examples of how you can use the document object to access and manipulate HTML.</p>
+        <h3>Finding HTML Elements</h3>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>document.getElementById(id)</code></td>
+            <td>Find an element by element id</td>
+          </tr>
+          <tr>
+            <td><code>document.getElementsByTagName(name)</code></td>
+            <td>Find elements by tag name</td>
+          </tr>
+          <tr>
+            <td><code>document.getElementsByClassName(name)</code></td>
+            <td>Find elements by class name</td>
+          </tr>
+        </table>
+        <br>
+
+        <h3>Changing HTML Elements</h3>
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>element.innerHTML</code> =  new html content</td>
+            <td>Change the inner HTML of an element</td>
+          </tr>
+          <tr>
+            <td><code>element.attribute</code> = new value</td>
+            <td>Change the attribute value of an HTML element</td>
+          </tr>
+          <tr>
+            <td><code>element.style.property</code> = new style</td>
+            <td>Change the style of an HTML element</td>
+          </tr>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>element.setAttribute(attribute, value)</code></td>
+            <td>Change the attribute value of an HTML element</td>
+          </tr>
+        </table>
+        <br>
+
+        <h3>Adding and Deleting Elements</h3>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>document.createElement(element)</code></td>
+            <td>Create an HTML element</td>
+          </tr>
+          <tr>
+            <td><code>document.removeChild(element)</code></td>
+            <td>Remove an HTML element</td>
+          </tr>
+          <tr>
+            <td><code>document.appendChild(element)</code></td>
+            <td>Add an HTML element</td>
+          </tr>
+          <tr>
+            <td><code>document.replaceChild(new, old)</code></th>
+            <td>Replace an HTML element</th>
+          </tr>
+          <tr>
+            <td><code>document.write(text)</code></td>
+            <td>Write into the HTML output stream</td>
+          </tr>
+        </table>
+        <br>
+
+        <h3>Adding Events Handlers</h3>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>document.getElementById(id).onclick = function(){code}</code></td>
+            <td>Adding event handler code to an onclick event</td>
+          </tr>
+        </table>
+        <br>
+        <h2>Finding HTML Objects</h2>
+        <p>The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.</p>
+        <p>Later, in HTML DOM Level 3, more objects, collections, and properties were added.</p>
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>DOM</th>
+          </tr>
+          <tr>
+            <td><code>document.anchors</code></td>
+            <td>Returns all &lt;a&gt; elements that have a name attribute</td>
+              <td>1</td>
+          </tr>
+         	<tr>
+             <td>document.applets</td>
+             <td>Returns all &lt;applet&gt; elements (Deprecated in HTML5)</td>
+              <td>1</td>
+          </tr>
+          <tr>
+            <td>document.baseURI</td>
+            <td>Returns the absolute base URI of the document</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>document.body</td>
+            <td>Returns the &lt;body&gt; element</td>
+              <td>1</td>
+          </tr>
+          <tr>
+            <td>document.cookie</td>
+            <td>Returns the document's cookie</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>document.doctype</td>
+            <td>Returns the document's doctype</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>document.documentElement</td>
+            <td>Returns the &lt;html&gt; element</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.documentMode</code></td>
+            <td>Returns the mode used by the browser</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.documentURI</code></td>
+            <td>Returns the URI of the document</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.domain</code></td>
+            <td>Returns the domain name of the document server</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.domConfig</code></td>
+            <td>Obsolete. Returns the DOM configuration</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.embeds</code></td>
+            <td>Returns all &lt;embed&gt; elements</td>
+              <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.forms</code></td>
+            <td>Returns all &lt;form&gt; elements</td>
+              <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.head</code></td>
+            <td>Returns the &lt;head&gt; element</td>
+              <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.images</code></td>
+            <td>Returns all &lt;img&gt; elements</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.implementation</code></td>
+            <td>Returns the DOM implementation</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.inputEncoding</code></td>
+            <td>Returns the document's encoding (character set)</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.lastModified</code></td>
+            <td>Returns the date and time the document was updated</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.links</code></td>
+            <td>Returns all &lt;area&gt; and &lt;a&gt; elements that have a href attribute</td>
+              <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.readyState</code></td>
+            <td>Returns the (loading) status of the document</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.referrer</code></td>
+            <td>Returns the URI of the referrer (the linking document)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.scripts</code></td>
+            <td>Returns all &lt;script&gt; elements</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.strictErrorChecking</code></td>
+            <td>Returns if error checking is enforced</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>document.title</code></td>
+            <td>Returns the &lt;title&gt; element</td>
+              <td>1</td>
+          </tr>
+          <tr>
+            <td><code>document.URL</code></td>
+            <td>Returns the complete URL of the document</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <br>
+        &lt;&gt;
       </section>
-      <section class="main-section" id="Header_3">
-        <header>Header 3</header>
+
+      <section class="main-section" id="JS_HTML_DOM_Elements">
+        <header>JS HTML DOM Elements</header>
+        <p>This page teaches you how to find and access HTML elements in an HTML page.</p>
+        <h3>Finding HTML Elements</h3>
+        <p>Often, with JavaScript, you want to manipulate HTML elements.</p>
+        <p>To do so, you have to find the elements first. There are several ways to do this:</p>
+        <ul>
+          <li>Finding HTML elements by id</li>
+          <li>Finding HTML elements by tag name</li>
+          <li>Finding HTML elements by class name</li>
+          <li>Finding HTML elements by CSS selectors</li>
+          <li>Finding HTML elements by HTML object collections</li>
+        </ul>
+        <h2>Finding HTML Element by Id</h2>
+        <p>The easiest way to find an HTML element in the DOM, is by using the element id.</p>
+        <p>This example finds the element with <code>id="intro":</code></p>
+        <div>
+          <h3>Example</h3>
+          <span><code>var myElement = document.getElementById("intro");</code></span>
+        </div>
+        <p>If the element is found, the method will return the element as an object (in myElement).</p>
+        <p>If the element is not found, myElement will contain <code>null</code>.</p>
+
+        <h2>Finding HTML Elements by Tag Name</h2>
+        <p>This example finds all <code>&lt;p&gt;</code> elements:</p>
+        <div>
+          <h3>Example</h3>
+          <span><code>var x = document.getElementsByTagName("p");</code></span>
+        </div>
+        <p>This example finds the element with <code>id="main"</code>, and then finds all <code>&lt;p&gt;</code>  elements inside <code>"main"</code>:</p>
+        <div>
+          <h3>Example</h3>
+          <p><code>var x = document.getElementById("main");</code></p>
+          <p><code>var y = x.getElementsByTagName("p");</code></p>
+        </div>
+        <h2>Finding HTML Elements by Class Name</h2>
+        <p>If you want to find all HTML elements with the same class name, use <code>getElementsByClassName()</code>.</p>
+        <p>This example returns a list of all elements with <code>class="intro"</code>.</p>
+        <div>
+          <h3>Example</h3>
+          <p><code>var x = document.getElementsByClassName("intro");</code></p>
+        </div>
+        <span>Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</span>
+
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Changing_HTML">
+        <header>JS HTML DOM Changing HTML</header>
         <p>Paragraph 1</p>
         <p>Paragraph 2</p>
         <code
@@ -133,8 +441,9 @@
           <li>list item 2</li>
         </ul>
       </section>
-      <section class="main-section" id="Header_4">
-        <header>Header 4</header>
+
+      <section class="main-section" id="JS_HTML_DOM_Changing_CSS">
+        <header>JS HTML DOM Changing CSS</header>
         <p>Paragraph 1</p>
         <p>Paragraph 2</p>
         <code
@@ -146,8 +455,93 @@
           <li>list item 2</li>
         </ul>
       </section>
-      <section class="main-section" id="Header_5">
-        <header>Header 5</header>
+
+      <section class="main-section" id="JS_HTML_DOM_Animation">
+        <header>JS HTML DOM Animation</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Events">
+        <header>JS HTML DOM Events</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_EventListener">
+        <header>JS HTML DOM EventListener</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Navigation">
+        <header>JS HTML DOM Navigation</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Elements_(Nodes)">
+        <header>JS HTML DOM Elements (Nodes)</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Collections">
+        <header>JS HTML DOM Collections</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JS_HTML_DOM_Node_Lists">
+        <header>JS HTML DOM Node Lists</header>
         <p>Paragraph 1</p>
         <p>Paragraph 2</p>
         <code
