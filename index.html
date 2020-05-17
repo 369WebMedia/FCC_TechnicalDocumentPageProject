@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FCC-Technial Document Page Project</title>
+    <title>FCC-Technical Document Page Project</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -16,6 +16,9 @@
   </head>
 
   <body>
+
+    <!--------- navbar JS HTML DOM ---------->
+
     <nav id="navbar">
       <header>JS HTML DOM</header>
       <ul>
@@ -57,10 +60,12 @@
             </li>
             <li>
               <a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a>
-                </li>
-      </ul>
+            </li>
+          </ul>
     </nav>
     <main id="main-doc">
+
+      <!--------- JavaScript HTML DOM ---------->
 
       <section class="main-section" id="JavaScript_HTML_DOM">
         <header>JavaScript HTML DOM</header>
@@ -98,10 +103,9 @@
           <li>JavaScript can react to all existing HTML events in the page</li>
           <li>JavaScript can create new HTML events in the page</li>
         </ul>
-        <code>function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
       </section>
+
+      <!--------- JS HTML DOM Methods ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Methods">
         <header>JS HTML DOM Methods</header>
@@ -114,34 +118,41 @@
         <p>A property is a value that you can get or set (like changing the content of an HTML element).</p>
         <p>A method is an action you can do (like add or deleting an HTML element).</p>
 
-        <div class="example-method">
+        <div class="code-div">
         <h3>Example</h3>
-        <p>The following example changes the content ( <code class="code-text">innerHTML</code> ) of the <code class="code-text">< p ></code> element with <code class="code-text">id="demo"</code> : </p>
-        <div class="w3-code notranslate htmlHigh">
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jsnumbercolor" style="color:red">
-          </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello World!"</span>;<br>
-          </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <code class="code-txt">< p ></code> element with <code class="code-txt">id="demo"</code> : </p>
+        <div class="example-code">
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br>
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor" style="color:rgb(243, 250, 141)"><br><span class="jsnumbercolor" style="color:rgb(224, 222, 222)">document.getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span class="jsstringcolor">"Hello World!"</span>;<br>
+          </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
         </div>
+        <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="blank">Watch this code at work</a></button>
+        <br>
+      </div>
         
-        <p>In the example above, <code class="code-text">getElementById</code> is a method, while <code class="code-text">innerHTML</code> is a property.</p>
+      
+        
+        <p>In the example above, <code class="code-txt">getElementById</code> is a method, while <code class="code-txt">innerHTML</code> is a property.</p>
 
         <h2>The getElementById Method</h2>
 
-        <p>The most common way to access an HTML element is to use the <code class="code-text">id</code> of the element.</p>
-        <P>In the example above the <code class="code-text">getElementById</code> method used <code class="code-text">id="demo"</code> to find the element.</P>
+        <p>The most common way to access an HTML element is to use the <code class="code-txt">id</code> of the element.</p>
+        <P>In the example above the <code class="code-txt">getElementById</code> method used <code class="code-txt">id="demo"</code> to find the element.</P>
 
         <h2>The innerHTML Property</h2>
-        <p>The easiest way to get the content of an element is by using the <code class="code-text">innerHTML property.</code></p>
-        <p>The <code class="code-text">innerHTML</code>  property is useful for getting or replacing the content of HTML elements.</p>
+        <p>The easiest way to get the content of an element is by using the <code class="code-txt">innerHTML property.</code></p>
+        <p>The <code class="code-txt">innerHTML</code>  property is useful for getting or replacing the content of HTML elements.</p>
         <br>
-        <p><span class="highlight">The <code class="code-text">innerHTML</code> property can be used to get or change any HTML element, including <code class="code-text">&lt;html&gt;</code> and <code class="code-text">&lt;body&gt;</code>.</span>
+        <p><span class="highlight">The <code class="code-txt">innerHTML</code> property can be used to get or change any HTML element, including <code class="code-txt">&lt;html&gt;</code> and <code class="code-txt">&lt;body&gt;</code>.</span>
         </p>
       </section>
+
+      <!--------- JS HTML DOM Document ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Document">
         <header>JS HTML DOM Document</header>
@@ -159,15 +170,15 @@
             <th>Description</th>
           </tr>
           <tr>
-            <td><code>document.getElementById(id)</code></td>
+            <td><code class="code-txt">document.getElementById(id)</code></td>
             <td>Find an element by element id</td>
           </tr>
           <tr>
-            <td><code>document.getElementsByTagName(name)</code></td>
+            <td><code class="code-txt">document.getElementsByTagName(name)</code></td>
             <td>Find elements by tag name</td>
           </tr>
           <tr>
-            <td><code>document.getElementsByClassName(name)</code></td>
+            <td><code class="code-txt">document.getElementsByClassName(name)</code></td>
             <td>Find elements by class name</td>
           </tr>
         </table>
@@ -379,8 +390,9 @@
           </tr>
         </table>
         <br>
-        &lt;&gt;
       </section>
+
+      <!--------- JS HTML DOM Elements ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Elements">
         <header>JS HTML DOM Elements</header>
@@ -398,49 +410,168 @@
         <h2>Finding HTML Element by Id</h2>
         <p>The easiest way to find an HTML element in the DOM, is by using the element id.</p>
         <p>This example finds the element with <code>id="intro":</code></p>
-        <div>
+        <div class="code-div">
           <h3>Example</h3>
-          <span><code>var myElement = document.getElementById("intro");</code></span>
+          <p class="code-p"><code>var myElement = document.getElementById("intro");</code></p>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="blank">Watch this code at work</a></button>
+        <br>
         </div>
         <p>If the element is found, the method will return the element as an object (in myElement).</p>
         <p>If the element is not found, myElement will contain <code>null</code>.</p>
 
         <h2>Finding HTML Elements by Tag Name</h2>
         <p>This example finds all <code>&lt;p&gt;</code> elements:</p>
-        <div>
+        <div class="code-div">
           <h3>Example</h3>
-          <span><code>var x = document.getElementsByTagName("p");</code></span>
+          <p class="code-p"><code>var x = document.getElementsByTagName("p");</code></p>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="blank">Watch this code at work</a></button>
+        <br>
         </div>
         <p>This example finds the element with <code>id="main"</code>, and then finds all <code>&lt;p&gt;</code>  elements inside <code>"main"</code>:</p>
-        <div>
+        <div class="code-div">
           <h3>Example</h3>
-          <p><code>var x = document.getElementById("main");</code></p>
-          <p><code>var y = x.getElementsByTagName("p");</code></p>
+          <p class="code-p"><code>var x = document.getElementById("main");</code></p>
+          <p class="code-p"><code>var y = x.getElementsByTagName("p");</code></p>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="blank">Watch this code at work</a></button>
+        <br>
         </div>
         <h2>Finding HTML Elements by Class Name</h2>
         <p>If you want to find all HTML elements with the same class name, use <code>getElementsByClassName()</code>.</p>
-        <p>This example returns a list of all elements with <code>class="intro"</code>.</p>
-        <div>
+        <p>This example returns a list of all elements with <code class="code-txt">class="intro"</code>.</p>
+        <div class="code-div">
           <h3>Example</h3>
-          <p><code>var x = document.getElementsByClassName("intro");</code></p>
+          <p class="code-p"><code>var x = document.getElementsByClassName("intro");</code></p>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="blank">Watch this code at work</a></button>
+        <br>
         </div>
-        <span>Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</span>
+        <br>
+        <span class="highlight">Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</span>
+        <br>
+        <h2>Finding HTML Elements by CSS Selectors</h2>
+        <p>If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the <code class="code-txt">querySelectorAll()</code> method.</p>
+        <p>This example returns a list of all <code class="code-txt">&lt;p&gt;</code>  elements with <code class="code-txt">class="intro"</code>.</p>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p class="code-p"><code>var x = document.querySelectorAll("p.intro");</code></p>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall" target="blank">Watch this code at work</a></button>
+        <br>
+        </div>
+        <br>
+        <p class="highlight">The <code class="code-txt">querySelectorAll()</code> method does not work in Internet Explorer 8 and earlier versions.</p>
+        <br>
 
+        <h2>Finding HTML Elements by HTML Object Collections</h2>
+        <p>This example finds the form element with <code class="code-txt"> id="frm1"</code>, in the forms collection, and displays all element values:</p>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <p><code>var x = document.forms["frm1"];</code></p>
+            <p><code>var text = "";</code></p>
+            <p><code>var i;</code></p>
+            <p><code>for (i = 0; i < x.length; i++) {</code></p>
+            <p><code>text += x.elements[i].value + "&lt;br&gt;";</code></p>
+            <p><code>}</code></p>
+            <p><code>document.getElementById("demo").innerHTML = text;</code></p>
+          </div>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" target="blank">Watch this code at work</a></button>
+        <br>
+        </div>
+        <br>
+        <p>The following HTML objects (and object collections) are also accessible:</p>
+        <ul>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_anchors" target="blank">document.anchors</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_body" target="blank">document.body</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_element" target="blank">document.documentElement</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_embeds" target="blank">document.embeds</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_forms" target="blank">document.forms</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_head" target="blank">document.head</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_images" target="blank">document.images</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_links" target="blank">document.links</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_scripts" target="blank">document.scripts</a></li>
+          <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_title" target="blank">document.title</a></li>
+        </ul>
+        <br><br>
+        <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1" target="blank">Test Yourself</a></button>
       </section>
+
+      <!--------- JS HTML DOM Changing HTML ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Changing_HTML">
         <header>JS HTML DOM Changing HTML</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
+        <p>The HTML DOM allows JavaScript to change the content of HTML elements.</p>
+        <h2>Changing the HTML Output Stream</h2>
+        <p>JavaScript can create dynamic HTML content:</p>
+        <p style="font-weight:700;">Date: Sat May 16 2020 13:03:52 GMT-0700 (Pacific Daylight Time)</p>
+        <p>In JavaScript, <code class="code-txt">document.write()</code> can be used to write directly to the HTML output stream:</p>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p></p>
+            <p></p>
+            <p><code>&lt;script&gt;</code></p>
+            <p><code>document.write(Date());</code></p>
+            <p><code>&lt;script&gt;</code></p>
+            <p></p>
+            <p></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+          </div>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_date" target="blank">Watch this code at work</a></button>
+        <br>
+        </div>
+        <br>
+        <p class="highlight">Never use <code class="code-txt">document.write()</code>  after the document is loaded. It will overwrite the document.</p>
+
+        <h2>Changing HTML Content</h2>
+        <p>The easiest way to modify the content of an HTML element is by using the <code class="code-txt">innerHTML</code> property.</p>
+        <p>To change the content of an HTML element, use this syntax:</p>
+        <p class="code-p">document.getElementById(id).innerHTML = new HTML</p>
+        <p>This example changes the content of a <code class="code-txt">&lt;p&gt;</code> element:</p>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p></p>
+            <p></p>
+            <p>&lt;p id="p1"&gt;Hello World!&lt;/p&gt;</p>
+            <p></p>
+            <p></p>
+            <p><code>&lt;script&gt;</code></p>
+            <p><code>document.getElementById("p1").innerHTML = "New text!";</code></p>
+            <p><code>&lt;script&gt;</code></p>
+            <p></p>
+            <p></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+          </div>
+          <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" target="blank">Watch this code at work</a></button>
+        <br>
+        </div>
+        <p>Example above explained:</p>
         <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
+          <li>The HTML document above contains a <span class="code-txt">&lt;p&gt;</span> element with <span class="code-txt">id="p1"</span></li>
+          <li>We use the HTML DOM to get the element with <span class="code-txt">id="p1"</span></li>
+          <li>A JavaScript changes the content ( <span class="code-txt">innerHTML</span> ) of that element to "New text!"</li>
         </ul>
+        <p>This example changes the content of an <span>&lt;h1&gt;</span> element:</p>
       </section>
+
+      <!--------- JS HTML DOM Changing CSS ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Changing_CSS">
         <header>JS HTML DOM Changing CSS</header>
@@ -456,6 +587,8 @@
         </ul>
       </section>
 
+      <!--------- JS HTML DOM Animation ---------->
+
       <section class="main-section" id="JS_HTML_DOM_Animation">
         <header>JS HTML DOM Animation</header>
         <p>Paragraph 1</p>
@@ -469,6 +602,8 @@
           <li>list item 2</li>
         </ul>
       </section>
+
+      <!--------- JS HTML DOM Events ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Events">
         <header>JS HTML DOM Events</header>
@@ -484,6 +619,8 @@
         </ul>
       </section>
 
+      <!--------- JS HTML DOM EventListener ---------->
+
       <section class="main-section" id="JS_HTML_DOM_EventListener">
         <header>JS HTML DOM EventListener</header>
         <p>Paragraph 1</p>
@@ -497,6 +634,8 @@
           <li>list item 2</li>
         </ul>
       </section>
+
+      <!--------- JS HTML DOM Navigation ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Navigation">
         <header>JS HTML DOM Navigation</header>
@@ -512,6 +651,8 @@
         </ul>
       </section>
 
+      <!--------- JS HTML DOM Elements (Nodes) ---------->
+
       <section class="main-section" id="JS_HTML_DOM_Elements_(Nodes)">
         <header>JS HTML DOM Elements (Nodes)</header>
         <p>Paragraph 1</p>
@@ -526,6 +667,8 @@
         </ul>
       </section>
 
+      <!--------- JS HTML DOM Collections ---------->
+
       <section class="main-section" id="JS_HTML_DOM_Collections">
         <header>JS HTML DOM Collections</header>
         <p>Paragraph 1</p>
@@ -539,6 +682,8 @@
           <li>list item 2</li>
         </ul>
       </section>
+
+      <!--------- JS HTML DOM Node Lists ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Node_Lists">
         <header>JS HTML DOM Node Lists</header>

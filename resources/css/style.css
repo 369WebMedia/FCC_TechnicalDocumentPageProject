@@ -12,7 +12,7 @@ header{
   font-size: 2.1rem;
   font-weight: bold;
   color: #399bd1;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 
 h1{
@@ -33,7 +33,7 @@ h3 {
 h1,
 h2,
 p{
-  padding: 10px 0;
+  padding: 5px 0;
 }
 img {
   width: auto;
@@ -42,12 +42,66 @@ a{
   text-decoration: none;
   color: inherit;
 }
+table {
+  width: 80%;
+}
+td{
+  width: 40%;
+  padding: 5px 0;
+}
+td{
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
 /***** End Universal Styles *****/
 
-.code-text{
+table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+table th {
+  padding: 10px 0 ;
+  text-align: left;
+}
+
+/***** Examples Code Colors *****/
+.tagnamecolor{
+  color: rgb(255, 113, 78);
+}
+.tagcolor{
+  color: rgb(207, 207, 204);
+}
+.attributecolor{
+  color: rgb(0, 255, 13);
+}
+.jscolor{}
+.jsnumbercolor{}
+.jspropertycolor{
+  color: rgb(255, 0, 212);
+}
+.attributevaluecolor,
+.jsstringcolor{
+  color: cyan;
+}
+/***** End Examples Code Colors *****/
+
+.code-div{
+  background-color: rgba(209, 209, 197, 0.274);
+  padding: 20px 30px;
+}
+.code-p{
+  background-color: rgb(43, 41, 41);
+  color: #d6d6d4;
+  padding: 5px;
+}
+.code-txt{
   background-color: rgba(252, 216, 170, 0.233);
   color: #f72c2c;
   padding: 1px 5px;
+}
+.example-code{
+  background-color: rgb(43, 41, 41);
+  color: #d6d6d4;
+  padding: 20px;
 }
 
 .highlight{
@@ -57,10 +111,10 @@ a{
 
 #navbar {
   position: fixed;
-  min-width: 270px;
+  min-width: 285px;
   top: 0px;
   left: 0px;
-  width: 280px;
+  width: 295px;
   height: 100%;
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
@@ -70,7 +124,7 @@ a{
   padding-left: 20px;
 }
 #navbar ul {
-  height: 80%;
+  height: 75%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -119,10 +173,8 @@ a{
   max-width: 80%;
   padding: 2% 5%;
 }
-.w3-code{
-  background-color: rgb(253, 252, 252);
-}
 @media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
   }
+}
