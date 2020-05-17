@@ -534,10 +534,10 @@
         <p class="highlight">Never use <code class="code-txt">document.write()</code>  after the document is loaded. It will overwrite the document.</p>
 
         <h2>Changing HTML Content</h2>
-        <p>The easiest way to modify the content of an HTML element is by using the <code class="code-txt">innerHTML</code> property.</p>
+        <p>The easiest way to modify the content of an HTML element is by using the <span class="code-txt">innerHTML</span> property.</p>
         <p>To change the content of an HTML element, use this syntax:</p>
-        <p class="code-p">document.getElementById(id).innerHTML = new HTML</p>
-        <p>This example changes the content of a <code class="code-txt">&lt;p&gt;</code> element:</p>
+        <p class="code-p"><code>document.getElementById(id).innerHTML = new HTML</code></p>
+        <p>This example changes the content of a <span class="code-txt">&lt;p&gt;</span> element:</p>
         <br>
         <div class="code-div">
           <h3>Example</h3>
@@ -568,39 +568,214 @@
           <li>We use the HTML DOM to get the element with <span class="code-txt">id="p1"</span></li>
           <li>A JavaScript changes the content ( <span class="code-txt">innerHTML</span> ) of that element to "New text!"</li>
         </ul>
-        <p>This example changes the content of an <span>&lt;h1&gt;</span> element:</p>
+        <br>
+        <br>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>This example changes the content of an <span class="code-txt">&lt;h1&gt;</span> element:</p>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE <span class="attributecolor">html</span><span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor">="id01"</span></span><span class="tagcolor">&gt;</span></span>Old heading<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor" style="color:rgb(243, 250, 141)"><br><span class="attributecolor"> var</span>  <span class="jsnumbercolor">element = document.getElementById</span>(<span class="jsstringcolor">"id01"</span>);<br>
+            <span class="jspropertycolor">element.innerHTML</span> = <span class="jsstringcolor">"New Heading"</span>;<br>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>JavaScript changed "Old Heading" to "New Heading".<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" target="blank">Watch this code at work</a></button>
+          <br>
+        </div>
+
+        <p>Example explained:</p>
+        <ul>
+          <li>The HTML document above contains an <span class="code-txt">&lt;h1&gt;</span> element with <span class="code-txt">id="id01"</span></li>
+          <li>We use the HTML DOM to get the element with <span class="code-txt">id="id01"</span></li>
+          <li>A JavaScript changes the content (<span class="code-txt">innerHTML</span>) of that element to "New Heading"</li>
+        </ul>
+
+        <h2>Changing the Value of an Attribute</h2>
+        <p>To change the value of an HTML attribute, use this syntax:</p>
+        <p class="code-p"><code>document.getElementById(id).attribute = new value</code></p>
+        <p>This example changes the value of the src attribute of an <span class="code-txt">&lt;img&gt;</span> element:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>This example changes the content of an <span class="code-txt">&lt;h1&gt;</span> element:</p>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE <span class="attributecolor">html</span><span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>img<span class="attributecolor"> id<span class="attributevaluecolor">="myImage"</span></span><span class="attributecolor"> src<span class="attributevaluecolor">="smiley.gif"</span></span><span class="tagcolor">&gt;</span></span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">document.getElementById</span>(<span class="jsstringcolor">"myImage"</span>).
+            <span class="jspropertycolor">src</span> = <span class="jsstringcolor">"landscape.jpg"</span>;<br>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" target="blank">Watch this code at work</a></button>
+          <br><br>
+          <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html4" target="blank">Test yourself here</a></button>
+          <br>
+        </div>
+
       </section>
 
       <!--------- JS HTML DOM Changing CSS ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Changing_CSS">
         <header>JS HTML DOM Changing CSS</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
+        <p>The HTML DOM allows JavaScript to change the style of HTML elements.</p>
+
+        <h2>Changing HTML Style</h2>
+        <p>To change the style of an HTML element, use this syntax:</p>
+        <p class="code-p"><code>document.getElementById(id).style.property = new style</code></p>
+        
+        <br><br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>The following example changes the style of a <span class="code-txt">&lt;p&gt;</span> element:</p>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE <span class="attributecolor">html</span><span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span></span>Hello World!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">document.getElementById</span>(<span class="jsstringcolor">"p2"</span>).
+            <span class="jspropertycolor">style.color</span> = <span class="jsstringcolor">"blue"</span>;<br>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span></span>The paragraph above was changed by a script.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_style" target="blank">Watch this code at work</a></button>
+          <br>
+        </div>
+        <br>
+        <br>
+        <h2>Using Events</h2>
+        <p>The HTML DOM allows you to execute code when an event occurs.</p>
+        <p>Events are generated by the browser when "things happen" to HTML elements:</p>
+        <br>
         <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
+          <li>An element is clicked on</li>
+          <li>The page has loaded</li>
+          <li>Input fields are changed</li>
         </ul>
+        <br>
+        <p>You will learn more about events in the next chapter of this tutorial.</p>
+        <br>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>This example changes the style of the HTML element with <span class="code-txt">id="id1"</span>, when the user clicks a button:</p>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE <span class="attributecolor">html</span><span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor">="id1"</span></span><span class="tagcolor">&gt;</span></span></span>My Heading 1<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>button<span class="attributecolor"> type<span class="attributevaluecolor">="button"</span><br>
+            <span class="attributecolor"> onclick<span class="attributevaluecolor">="document.getElementById('id1').style.color = 'red'"</span><span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">Click Me!</span>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/button<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_color2" target="blank">Watch this code at work</a></button>
+          <br>
+          <br>
+          <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html6" target="blank">Test yourself here</a></button>
+          <br>
+        </div>
+        <br>
+        <br>
+        <h2>More Examples</h2>
+        <p><button><a  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_visibility" target="blank">Visibility</a></button> -- How to make an element invisible. Do you want to show the element or not?</p>
+        <br>
+        <br>
+        <h2>HTML DOM Style Object Reference</h2>
+        <p>For HTML DOM style properties, go to the <a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="blank" style="text-decoration-line: underline;">w3schools website</a>.</p>
+
       </section>
 
       <!--------- JS HTML DOM Animation ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Animation">
         <header>JS HTML DOM Animation</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+        <p>Learn to create HTML animations using JavaScript.</p>
+        <h2>A Basic Web Page</h2>
+        <p>To demonstrate how to create HTML animations with JavaScript, we will use a simple web page:</p>
+        
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE <span class="attributecolor">html</span><span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span></span></span>My First JavaScript Animation<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor">="animation"</span><span class="tagcolor">&gt;</span></span><span class="jscolor"><span class="jsnumbercolor">My animation will go here</span>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+        </div>
+        <br>
+        <h2>Create an Animation Container</h2>
+        <p>All animations should be relative to a container element.</p>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id <span class="attributevaluecolor"> ="container"</span><span class="tagcolor">&gt;</span></span><br>
+            &nbsp; &nbsp; &nbsp;
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id <span class="attributevaluecolor"> ="animate"</span><span class="tagcolor">&gt;</span></span><span class="jscolor"><span class="jsnumbercolor">My animation will go here</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br>
+          </div>
+        </div>
+        <br>
+        <h2>Style the Elements</h2>
+        <p>The container element should be created with style = "<code class="code-txt">position: relative</code>".</p>
+        <p>The animation element should be created with style = "<code class="code-txt">position: absolute</code>".</p>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="cssselectorcolor">
+              #container <span class="cssdelimitercolor">{</span><span class="csspropertycolor" ><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor"><span class="cssdelimitercolor"">:</span> 400px<span class="cssdelimitercolor">;</span></span><br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor" ><span class="cssdelimitercolor" >:</span> 
+              400px<span class="cssdelimitercolor">;</span></span><br>&nbsp; position<span class="csspropertyvaluecolor"><span class="cssdelimitercolor" >:</span> relative<span class="cssdelimitercolor">;</span></span><br>&nbsp; 
+              background<span class="csspropertyvaluecolor"><span class="cssdelimitercolor">:</span> yellow<span class="cssdelimitercolor" >;</span></span><br>
+              </span><span class="cssdelimitercolor">}</span><br>#animate <span class="cssdelimitercolor">{</span><span class="csspropertycolor"><br>&nbsp; width<span class="csspropertyvaluecolor" ><span class="cssdelimitercolor">:</span> 50px<span class="cssdelimitercolor" >;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"><span class="cssdelimitercolor">:</span> 
+              50px<span class="cssdelimitercolor">;</span></span><br>&nbsp; position<span class="csspropertyvaluecolor"><span class="cssdelimitercolor" >:</span> absolute<span class="cssdelimitercolor">;</span></span><br>&nbsp; 
+              background<span class="csspropertyvaluecolor"><span class="cssdelimitercolor">:</span> red<span class="cssdelimitercolor" >;</span></span><br></span><span class="cssdelimitercolor">}</span>
+              </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_2" target="blank">See our page so far</a></button>
+          <br>
+        </div>
+        <br>
+        <h2>Animation Code</h2>
+        <p>JavaScript animations are done by programming gradual changes in an element's style.</p>
+        <p>The changes are called by a timer. When the timer interval is small, the animation looks continuous.</p>
+        <p>The basic code is:</p>
+        <br>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="jscolor"><span class="jspropertycolor">
+             <span class="jskeywordcolor">var</span> id = setInterval(frame, <span class="jsnumbercolor">5</span>);</span><br><br><span class="jskeywordcolor" >function</span> frame() {<br>&nbsp; <span class="jskeywordcolor" >if</span> (<span class="commentcolor">/* 
+             test for finished */</span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;clearInterval(id);<br>&nbsp;&nbsp;} <span class="jskeywordcolor">else</span> {<br><span class="jsnumbercolor" >
+            </span>  &nbsp;&nbsp;&nbsp; <span class="jsnumbercolor">
+            </span> <span class="commentcolor">/* code to change the element style */</span>&nbsp; <br>&nbsp;&nbsp;}<br>}<span class="jsnumbercolor">
+            </span> </span>
+          </div>
+        </div>
+        <br>
       </section>
 
       <!--------- JS HTML DOM Events ---------->

@@ -64,28 +64,38 @@ table th {
 }
 
 /***** Examples Code Colors *****/
+
+.cssselectorcolor,
 .tagnamecolor{
-  color: rgb(255, 113, 78);
+  color: rgba(250, 115, 74, 0.897);
 }
+.cssdelimitercolor,
 .tagcolor{
-  color: rgb(207, 207, 204);
+  color: rgb(255, 255, 255);
 }
+.jskeywordcolor,
+.csspropertycolor,
 .attributecolor{
-  color: rgb(0, 255, 13);
+  color: rgb(213, 161, 226);
 }
-.jscolor{}
-.jsnumbercolor{}
+.jscolor{
+  color: gold;
+}
+.jsnumbercolor{
+  color: #77a5fc;
+}
 .jspropertycolor{
-  color: rgb(255, 0, 212);
+  color: rgb(255, 255, 255);
 }
+.csspropertyvaluecolor,
 .attributevaluecolor,
 .jsstringcolor{
-  color: cyan;
+  color: rgba(168, 235, 168, 0.836);
 }
 /***** End Examples Code Colors *****/
 
 .code-div{
-  background-color: rgba(209, 209, 197, 0.274);
+  background-color: rgba(185, 185, 182, 0.274);
   padding: 20px 30px;
 }
 .code-p{
@@ -99,7 +109,7 @@ table th {
   padding: 1px 5px;
 }
 .example-code{
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(37, 36, 36);
   color: #d6d6d4;
   padding: 20px;
 }
