@@ -69,6 +69,7 @@ table th {
 .tagnamecolor{
   color: rgba(250, 115, 74, 0.897);
 }
+.jscolor,
 .cssdelimitercolor,
 .tagcolor{
   color: rgb(255, 255, 255);
@@ -77,9 +78,6 @@ table th {
 .csspropertycolor,
 .attributecolor{
   color: rgb(213, 161, 226);
-}
-.jscolor{
-  color: gold;
 }
 .jsnumbercolor{
   color: #77a5fc;
@@ -91,6 +89,9 @@ table th {
 .attributevaluecolor,
 .jsstringcolor{
   color: rgba(168, 235, 168, 0.836);
+}
+.commentcolor{
+  color: darkgrey;
 }
 /***** End Examples Code Colors *****/
 
