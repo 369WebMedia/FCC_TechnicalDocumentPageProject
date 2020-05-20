@@ -2,77 +2,73 @@
 <html>
   <head>
     <title>FCC-Technical Document Page Project</title>
-    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-  
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- JavaScript -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
-
+  <!---------- body ---------->
   <body>
-
     <!--------- navbar JS HTML DOM ---------->
-
     <nav id="navbar">
       <header>JS HTML DOM</header>
       <ul>
         <li>
           <a class="nav-link" href="#JavaScript_HTML_DOM">JavaScript HTML DOM</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Methods">JS HTML DOM Methods</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Document">JS HTML DOM Document</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Elements">JS HTML DOM Elements</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#JS_HTML_DOM_Changing_HTML">JS HTML DOM Changing HTML</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#JS_HTML_DOM_Changing_CSS">JS HTML DOM Changing CSS</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#JS_HTML_DOM_Animation">JS HTML DOM Animation</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#JS_HTML_DOM_Events">JS HTML DOM Events</a>
-            </li>
-            <li>
+        </li>
+        <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Changing_HTML">JS HTML DOM Changing HTML</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Changing_CSS">JS HTML DOM Changing CSS</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Animation">JS HTML DOM Animation</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Events">JS HTML DOM Events</a>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_EventListener">JS HTML DOM EventListener</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Navigation">JS HTML DOM Navigation</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Elements_(Nodes)">JS HTML DOM Elements (Nodes)</a>
-            </li>
-            <li>
+        </li>
+        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Collections">JS HTML DOM Collections</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a>
-            </li>
-          </ul>
+        </li>
+        <li>
+          <a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a>
+        </li>
+      </ul>
     </nav>
+    <!---------- MAIN ----------->
     <main id="main-doc">
 
-      <!--------- JavaScript HTML DOM ---------->
-
+      <!---------- JavaScript HTML DOM ----------->
       <section class="main-section" id="JavaScript_HTML_DOM">
         <header>JavaScript HTML DOM</header>
         <h2>What is the DOM? (Document Object Model)</h2>
-        <p>The DOM is a W3C (World Wide Web Consortium) standard.</p>
-        <p>The DOM defines a standard for accessing documents:</p>
-        <p>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."</p>
+        <p>The DOM is a W3C (World Wide Web Consortium) standard.</p><br>
+        <p>The DOM defines a standard for accessing documents:</p><br>
+        <p>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."</p><br>
         <p>The W3C DOM standard is separated into 3 different parts:</p>
         <ul>
           <li>Core DOM - standard model for all document types</li>
@@ -88,11 +84,11 @@
           <li>The events for all HTML elements</li>
         </ul>
         <p>In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
-        <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+        <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p><br>
         <div class="img-div">
           <p>The HTML DOM model is constructed as a tree of Objects:</p>
           <img src="https://www.w3schools.com/js/pic_htmltree.gif">
-        </div>
+        </div><br>
         <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</p>
         <ul>
           <li>JavaScript can change all the HTML elements in the page</li>
@@ -106,44 +102,31 @@
       </section>
 
       <!--------- JS HTML DOM Methods ---------->
-
       <section class="main-section" id="JS_HTML_DOM_Methods">
         <header>JS HTML DOM Methods</header>
-        <p>HTML DOM methods are actions you can perform (on HTML Elements).</p>
-        <p>HTML DOM properties are values (of HTML Elements) that you can set or change.</p>
+        <p>HTML DOM methods are actions you can perform (on HTML Elements).</p><br>
+        <p>HTML DOM properties are values (of HTML Elements) that you can set or change.</p><br>
         <h2>The DOM Programming Interface</h2>
         <p>The HTML DOM can be accessed with JavaScript (and with other programming languages).</p>
         <p>In the DOM, all HTML elements are defined as objects.</p>
         <p>The programming interface is the properties and methods of each object.</p>
         <p>A property is a value that you can get or set (like changing the content of an HTML element).</p>
         <p>A method is an action you can do (like add or deleting an HTML element).</p>
-
+        <!--------- CODE-DIV ---------->
         <div class="code-div">
-        <h3>Example</h3>
-        <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <code class="code-txt">< p ></code> element with <code class="code-txt">id="demo"</code> : </p>
-        <div class="example-code">
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br>
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br>
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor" style="color:rgb(243, 250, 141)"><br><span class="jsnumbercolor" style="color:rgb(224, 222, 222)">document.getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span class="jsstringcolor">"Hello World!"</span>;<br>
-          </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
-          <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          <h3>Example</h3>
+          <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <code class="code-txt">< p ></code> element with <code class="code-txt">id="demo"</code> :</p>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">document.getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span class="jsstringcolor">"Hello World!"</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="blank">Watch this code at work</a></button>
+          <br>
         </div>
-        <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="blank">Watch this code at work</a></button>
-        <br>
-      </div>
-        
-      
-        
         <p>In the example above, <code class="code-txt">getElementById</code> is a method, while <code class="code-txt">innerHTML</code> is a property.</p>
-
         <h2>The getElementById Method</h2>
-
         <p>The most common way to access an HTML element is to use the <code class="code-txt">id</code> of the element.</p>
         <P>In the example above the <code class="code-txt">getElementById</code> method used <code class="code-txt">id="demo"</code> to find the element.</P>
-
         <h2>The innerHTML Property</h2>
         <p>The easiest way to get the content of an element is by using the <code class="code-txt">innerHTML property.</code></p>
         <p>The <code class="code-txt">innerHTML</code>  property is useful for getting or replacing the content of HTML elements.</p>
@@ -153,7 +136,6 @@
       </section>
 
       <!--------- JS HTML DOM Document ---------->
-
       <section class="main-section" id="JS_HTML_DOM_Document">
         <header>JS HTML DOM Document</header>
         <p>The HTML DOM document object is the owner of all other objects in your web page.</p>
@@ -161,239 +143,244 @@
         <p>The document object represents your web page.</p>
         <p>If you want to access any element in an HTML page, you always start with accessing the document object.</p>
         <br>
-
         <p>Below are some examples of how you can use the document object to access and manipulate HTML.</p>
         <h3>Finding HTML Elements</h3>
         <table>
-          <tr>
-            <th>Method</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code class="code-txt">document.getElementById(id)</code></td>
-            <td>Find an element by element id</td>
-          </tr>
-          <tr>
-            <td><code class="code-txt">document.getElementsByTagName(name)</code></td>
-            <td>Find elements by tag name</td>
-          </tr>
-          <tr>
-            <td><code class="code-txt">document.getElementsByClassName(name)</code></td>
-            <td>Find elements by class name</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code class="code-txt">document.getElementById(id)</code></td>
+              <td>Find an element by element id</td>
+            </tr>
+            <tr>
+              <td><code class="code-txt">document.getElementsByTagName(name)</code></td>
+              <td>Find elements by tag name</td>
+            </tr>
+            <tr>
+              <td><code class="code-txt">document.getElementsByClassName(name)</code></td>
+              <td>Find elements by class name</td>
+            </tr>
+          </tbody>
         </table>
         <br>
-
         <h3>Changing HTML Elements</h3>
         <table>
-          <tr>
-            <th>Property</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code>element.innerHTML</code> =  new html content</td>
-            <td>Change the inner HTML of an element</td>
-          </tr>
-          <tr>
-            <td><code>element.attribute</code> = new value</td>
-            <td>Change the attribute value of an HTML element</td>
-          </tr>
-          <tr>
-            <td><code>element.style.property</code> = new style</td>
-            <td>Change the style of an HTML element</td>
-          </tr>
-          <tr>
-            <th>Method</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code>element.setAttribute(attribute, value)</code></td>
-            <td>Change the attribute value of an HTML element</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>element.innerHTML</code> = new html content</td>
+              <td>Change the inner HTML of an element</td>
+            </tr>
+            <tr>
+              <td><code>element.attribute</code> = new value</td>
+              <td>Change the attribute value of an HTML element</td>
+            </tr>
+            <tr>
+              <td><code>element.style.property</code> = new style</td>
+              <td>Change the style of an HTML element</td>
+            </tr>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>element.setAttribute(attribute, value)</code></td>
+              <td>Change the attribute value of an HTML element</td>
+            </tr>
+          </tbody>
         </table>
         <br>
-
         <h3>Adding and Deleting Elements</h3>
         <table>
-          <tr>
-            <th>Method</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code>document.createElement(element)</code></td>
-            <td>Create an HTML element</td>
-          </tr>
-          <tr>
-            <td><code>document.removeChild(element)</code></td>
-            <td>Remove an HTML element</td>
-          </tr>
-          <tr>
-            <td><code>document.appendChild(element)</code></td>
-            <td>Add an HTML element</td>
-          </tr>
-          <tr>
-            <td><code>document.replaceChild(new, old)</code></th>
-            <td>Replace an HTML element</th>
-          </tr>
-          <tr>
-            <td><code>document.write(text)</code></td>
-            <td>Write into the HTML output stream</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>document.createElement(element)</code></td>
+              <td>Create an HTML element</td>
+            </tr>
+            <tr>
+              <td><code>document.removeChild(element)</code></td>
+              <td>Remove an HTML element</td>
+            </tr>
+            <tr>
+              <td><code>document.appendChild(element)</code></td>
+              <td>Add an HTML element</td>
+            </tr>
+            <tr>
+              <td><code>document.replaceChild(new, old)</code></th>
+              <td>Replace an HTML element</th>
+            </tr>
+            <tr>
+              <td><code>document.write(text)</code></td>
+              <td>Write into the HTML output stream</td>
+            </tr>
+          </tbody>
         </table>
         <br>
-
         <h3>Adding Events Handlers</h3>
         <table>
-          <tr>
-            <th>Method</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code>document.getElementById(id).onclick = function(){code}</code></td>
-            <td>Adding event handler code to an onclick event</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>document.getElementById(id).onclick = function(){code}</code></td>
+              <td>Adding event handler code to an onclick event</td>
+            </tr>
+          </tbody>
         </table>
         <br>
         <h2>Finding HTML Objects</h2>
         <p>The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.</p>
         <p>Later, in HTML DOM Level 3, more objects, collections, and properties were added.</p>
         <table>
-          <tr>
-            <th>Property</th>
-            <th>Description</th>
-            <th>DOM</th>
-          </tr>
-          <tr>
-            <td><code>document.anchors</code></td>
-            <td>Returns all &lt;a&gt; elements that have a name attribute</td>
-              <td>1</td>
-          </tr>
-         	<tr>
-             <td>document.applets</td>
-             <td>Returns all &lt;applet&gt; elements (Deprecated in HTML5)</td>
-              <td>1</td>
-          </tr>
-          <tr>
-            <td>document.baseURI</td>
-            <td>Returns the absolute base URI of the document</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>document.body</td>
-            <td>Returns the &lt;body&gt; element</td>
-              <td>1</td>
-          </tr>
-          <tr>
-            <td>document.cookie</td>
-            <td>Returns the document's cookie</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>document.doctype</td>
-            <td>Returns the document's doctype</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>document.documentElement</td>
-            <td>Returns the &lt;html&gt; element</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.documentMode</code></td>
-            <td>Returns the mode used by the browser</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.documentURI</code></td>
-            <td>Returns the URI of the document</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.domain</code></td>
-            <td>Returns the domain name of the document server</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.domConfig</code></td>
-            <td>Obsolete. Returns the DOM configuration</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.embeds</code></td>
-            <td>Returns all &lt;embed&gt; elements</td>
+          <tbody>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>DOM</th>
+            </tr>
+            <tr>
+              <td><code>document.anchors</code></td>
+              <td>Returns all &lt;a&gt; elements that have a name attribute</td>
+                <td>1</td>
+            </tr>
+             <tr>
+               <td>document.applets</td>
+               <td>Returns all &lt;applet&gt; elements (Deprecated in HTML5)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td>document.baseURI</td>
+              <td>Returns the absolute base URI of the document</td>
               <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.forms</code></td>
-            <td>Returns all &lt;form&gt; elements</td>
+            </tr>
+            <tr>
+              <td>document.body</td>
+              <td>Returns the &lt;body&gt; element</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td>document.cookie</td>
+              <td>Returns the document's cookie</td>
               <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.head</code></td>
-            <td>Returns the &lt;head&gt; element</td>
+            </tr>
+            <tr>
+              <td>document.doctype</td>
+              <td>Returns the document's doctype</td>
               <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.images</code></td>
-            <td>Returns all &lt;img&gt; elements</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.implementation</code></td>
-            <td>Returns the DOM implementation</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.inputEncoding</code></td>
-            <td>Returns the document's encoding (character set)</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.lastModified</code></td>
-            <td>Returns the date and time the document was updated</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.links</code></td>
-            <td>Returns all &lt;area&gt; and &lt;a&gt; elements that have a href attribute</td>
+            </tr>
+            <tr>
+              <td>document.documentElement</td>
+              <td>Returns the &lt;html&gt; element</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.documentMode</code></td>
+              <td>Returns the mode used by the browser</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.documentURI</code></td>
+              <td>Returns the URI of the document</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.domain</code></td>
+              <td>Returns the domain name of the document server</td>
               <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.readyState</code></td>
-            <td>Returns the (loading) status of the document</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.referrer</code></td>
-            <td>Returns the URI of the referrer (the linking document)</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.scripts</code></td>
-            <td>Returns all &lt;script&gt; elements</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.strictErrorChecking</code></td>
-            <td>Returns if error checking is enforced</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td><code>document.title</code></td>
-            <td>Returns the &lt;title&gt; element</td>
+            </tr>
+            <tr>
+              <td><code>document.domConfig</code></td>
+              <td>Obsolete. Returns the DOM configuration</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.embeds</code></td>
+              <td>Returns all &lt;embed&gt; elements</td>
+                <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.forms</code></td>
+              <td>Returns all &lt;form&gt; elements</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td><code>document.head</code></td>
+              <td>Returns the &lt;head&gt; element</td>
+                <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.images</code></td>
+              <td>Returns all &lt;img&gt; elements</td>
               <td>1</td>
-          </tr>
-          <tr>
-            <td><code>document.URL</code></td>
-            <td>Returns the complete URL of the document</td>
-            <td>1</td>
-          </tr>
+            </tr>
+            <tr>
+              <td><code>document.implementation</code></td>
+              <td>Returns the DOM implementation</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.inputEncoding</code></td>
+              <td>Returns the document's encoding (character set)</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.lastModified</code></td>
+              <td>Returns the date and time the document was updated</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.links</code></td>
+              <td>Returns all &lt;area&gt; and &lt;a&gt; elements that have a href attribute</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td><code>document.readyState</code></td>
+              <td>Returns the (loading) status of the document</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.referrer</code></td>
+              <td>Returns the URI of the referrer (the linking document)</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><code>document.scripts</code></td>
+              <td>Returns all &lt;script&gt; elements</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.strictErrorChecking</code></td>
+              <td>Returns if error checking is enforced</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><code>document.title</code></td>
+              <td>Returns the &lt;title&gt; element</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td><code>document.URL</code></td>
+              <td>Returns the complete URL of the document</td>
+              <td>1</td>
+            </tr>
+          </tbody>
         </table>
         <br>
       </section>
 
       <!--------- JS HTML DOM Elements ---------->
-
       <section class="main-section" id="JS_HTML_DOM_Elements">
         <header>JS HTML DOM Elements</header>
         <p>This page teaches you how to find and access HTML elements in an HTML page.</p>
@@ -414,20 +401,19 @@
           <h3>Example</h3>
           <p class="code-p"><code>var myElement = document.getElementById("intro");</code></p>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="blank">Watch this code at work</a></button>
-        <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="blank">Watch this code at work</a></button>
+          <br>
         </div>
         <p>If the element is found, the method will return the element as an object (in myElement).</p>
         <p>If the element is not found, myElement will contain <code>null</code>.</p>
-
         <h2>Finding HTML Elements by Tag Name</h2>
         <p>This example finds all <code>&lt;p&gt;</code> elements:</p>
         <div class="code-div">
           <h3>Example</h3>
           <p class="code-p"><code>var x = document.getElementsByTagName("p");</code></p>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="blank">Watch this code at work</a></button>
-        <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="blank">Watch this code at work</a></button>
+          <br>
         </div>
         <p>This example finds the element with <code>id="main"</code>, and then finds all <code>&lt;p&gt;</code>  elements inside <code>"main"</code>:</p>
         <div class="code-div">
@@ -435,8 +421,8 @@
           <p class="code-p"><code>var x = document.getElementById("main");</code></p>
           <p class="code-p"><code>var y = x.getElementsByTagName("p");</code></p>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="blank">Watch this code at work</a></button>
-        <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="blank">Watch this code at work</a></button>
+          <br>
         </div>
         <h2>Finding HTML Elements by Class Name</h2>
         <p>If you want to find all HTML elements with the same class name, use <code>getElementsByClassName()</code>.</p>
@@ -445,11 +431,11 @@
           <h3>Example</h3>
           <p class="code-p"><code>var x = document.getElementsByClassName("intro");</code></p>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="blank">Watch this code at work</a></button>
-        <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="blank">Watch this code at work</a></button>
+          p<br>
         </div>
         <br>
-        <span class="highlight">Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</span>
+        <p class="highlight">Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</p>
         <br>
         <h2>Finding HTML Elements by CSS Selectors</h2>
         <p>If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the <code class="code-txt">querySelectorAll()</code> method.</p>
@@ -942,7 +928,7 @@
           <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onload" target="blank">Watch the code work</a></button>
           <br>
         </div>
-        <br>
+
         <h2>The onchange Event</h2>
         <p>The <code class="code-txt">onchange</code> event is often used in combination with validation of input fields.</p>
         <p>Below is an example of how to use the onchange. The <code class="code-txt">upperCase()</code> function will be called when a user changes the content of an input field.</p>
@@ -960,8 +946,7 @@
           <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange" target="blank">Watch the code work</a></button>
           <br>
         </div>
-        <br>
-        <br>
+
         <h2>The onmouseover and onmouseout Events</h2>
         <p>The <code class="code-txt">onmouseover</code> and <code class="code-txt">onmouseout</code> events can be used to trigger a function when the user mouses over, or out of, an HTML element:</p>
         <br>
@@ -974,14 +959,14 @@
           <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mouseover" target="blank">Watch the code work</a></button>
           <br>
         </div>
-        <br>
+
         <h2>The onmousedown, onmouseup and onclick Events</h2>
         <p>The <code class="code-txt">onmousedown</code>, <code class="code-txt">onmouseup</code>, and <code class="code-txt">onclick</code> events are all parts of a mouse-click. First when a mouse-button is clicked, the <code class="code-txt">onmousedown</code> event is triggered, then, when the mouse-button is released, the <code class="code-txt">onmouseup</code>  event is triggered, finally, when the mouse-click is completed, the <code class="code-txt">onclick</code> event is triggered.</p>
         <br>
         <div class="code-div">
           <h3>Example</h3>
-          <div >
-            <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: #ff4d4d; padding: 5px 20px; color: seashell; font-size: 2rem; font-weight: 700;">Thank You</div>
+          <div>
+            <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: #ff4d4d; padding: 5px 20px; color: seashell; font-size: 2rem; font-weight: 700;">Click On Me</div>
             <script type="application/javascript">
               <!--
               function mDown(obj)
@@ -992,7 +977,7 @@
              
               function mUp(obj)
               {
-              obj.style.backgroundColor="#ff5500";
+              obj.style.backgroundColor="#669999";
               obj.innerHTML="Thank You"
               }
               //-->
@@ -1002,88 +987,847 @@
           <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mousedown" target="blank">Watch the code work</a></button>
           <br>
         </div>
-        <br>
+
+        <h2>More Examples</h2>
+        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmousedown" target="blank"><code class="code-txt">onmousedown</code> and <code class="code-txt">onmouseup</code></a></button> --Change an image when a user holds down the mouse button.</p>
+        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onload" target="blank"><code class="code-txt">onload</code></a></button> --Display an alert box when the page has finished loading.</p>
+        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onfocus" target="blank"><code class="code-txt">onfocus</code></a></button> --Change the background-color of an input field when it gets focus.</p>
+        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmouse" target="blank">Mouse Events</a></button> --Change the color of an element when the cursor moves over it.</p>
+        <h2>HTML DOM Event Object Reference</h2>
+        <p>For a list of all HTML DOM events, visit w3schools.com <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="blank" style="text-decoration-line: underline; color: slateblue;">HTML DOM Event Object Reference</a> page.</p>
       </section>
 
       <!--------- JS HTML DOM EventListener ---------->
 
       <section class="main-section" id="JS_HTML_DOM_EventListener">
         <header>JS HTML DOM EventListener</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+        <h2>The addEventListener() method</h2>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>Add an event listener that fires when a user clicks a button:</p>
+          <div class="example-code">
+            <code>
+              <span class="jscolor"><span class="jsnumbercolor">
+              </span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myBtn"</span>).<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor">"click"</span>, displayDate); </span>
+            </code>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <p>The <code class="code-txt">addEventListener()</code> method attaches an event handler to the specified element.</p>
+        <p>The <code class="code-txt">addEventListener()</code> method attaches an event handler to an element without overwriting existing event handlers..</p>
+        <p>You can add many event handlers to one element.</p>
+        <p>You can add many event handlers of the same type to one element, i.e two "click" events.</p>
+        <p>You can add event listeners to any DOM object not only HTML elements. i.e the window object.</p>
+        <p>The <code class="code-txt">addEventListener()</code> method makes it easier to control how the event reacts to bubbling.</p>
+        <p>When using the <code class="code-txt">addEventListener()</code> method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.</p>
+        <p>You can easily remove an event listener by using the <code class="code-txt">removeEventListener()</code> method.</p>
+        <h2>Syntax</h2>
+          <div class="example-code">
+                <em>element</em>.addEventListener(<em>event, function, useCapture</em>);
+          </div>
+        <br>
+        <p>The first parameter is the type of the event (like "<code class="code-txt">click</code> or <code class="code-txt">mousedown</code>" or any other<a href="#JS_HTML_DOM_Events" style="text-decoration-line: underline; color: slateblue;"> HTML DOM Event</a>.)</p>
+        <p>The second parameter is the function we want to call when the event occurs.</p>
+        <p>The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.</p>
+        <p class="highlight">Note that you don't use the "on" prefix for the event; use "<span class="code-txt">click</span>" instead of "<span class="code-txt">onclick</span>".</p>
+
+        <h2>Add an Event Handler to an Element</h2>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>Alert "Hello World!" when the user clicks on an element:</p>
+          <div class="example-code">
+            <span class="jscolor"><span class="jsnumbercolor">
+            </span> <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, &nbsp;<span class="jskeywordcolor">function</span>(){ &nbsp;alert(<span class="jsstringcolor">"Hello World!"</span>); &nbsp;}); </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <p>You can also refer to an external "named" function:</p>
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>Alert "Hello World!" when the user clicks on an element:</p>
+          <div class="example-code">
+            <span class="jscolor"><span class="jsnumbercolor">
+            </span>  <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>,  myFunction);<br><br><span class="jskeywordcolor">function</span> myFunction() {<br>&nbsp;&nbsp;alert (<span class="jsstringcolor">"Hello World!"</span>);<br>} </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add2" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <h2>Add Many Event Handlers to the Same Element</h2>
+          <p>The <code class="code-txt">addEventListener()</code> method allows you to add many events to the same element, without overwriting existing events:</p>
+          <div class="code-div">
+            <h3>Example</h3>
+            <div class="example-code">
+              <span class="jscolor"><span class="jsnumbercolor">
+              </span> <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, myFunction);<br><span class="jsnumbercolor">
+              </span> <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, mySecondFunction);<br><span class="jsnumbercolor">
+              </span>  </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+          <p>You can add events of different types to the same element:</p>
+          <div class="code-div">
+            <h3>Example</h3>
+            <div class="example-code">
+              <span class="jscolor">
+                <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"mouseover"</span>, myFunction);<br>
+                <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, mySecondFunction);<br>
+                <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"mouseout"</span>, myThirdFunction); </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>Add an Event Handler to the window Object</h2>
+          <p>The <code class="code-txt">addEventListener()</code> method allows you to add event listeners on any HTML DOM object such as HTML elements, the HTML document, the window object, or other objects that support events, like the <code class="code-txt">xmlHttpRequest</code> object.</p>
+
+          <div class="code-div">
+            <h3>Example</h3>
+            <p>Add an event listener that fires when a user resizes the window:</p>
+            <div class="example-code">
+              <span class="jscolor">
+                window.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"resize"</span>, <span class="jskeywordcolor">function</span>(){<br><span class="jsnumbercolor">
+                </span>&nbsp;&nbsp;document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <em>sometext</em>;<br><span class="jsnumbercolor">
+                </span>});<span class="jsnumbercolor">
+                </span> </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_dom" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>Passing Parameters</h2>
+          <p>When passing parameter values, use an "anonymous function" that calls the specified function with the parameters:</p>
+
+          <div class="code-div">
+            <h3>Example</h3>
+            <p>When passing parameter values, use an "anonymous function" that calls the specified function with the parameters:</p>
+            <div class="example-code">
+              <span class="jscolor">
+                <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, <span class="jskeywordcolor" >function</span>(){ myFunction(p1, p2); });<span class="jsnumbercolor" >
+                </span> </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_parameters" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>Event Bubbling or Event Capturing?</h2>
+          <p>There are two ways of event propagation in the HTML DOM, bubbling and capturing.</p>
+          <p>Event propagation is a way of defining the element order when an event occurs. If you have a <span>&lt;p&gt;</span> element inside a <span>&lt;div&gt;</span> element, and the user clicks on the <span>&lt;p&gt;</span> element, which element's "click" event should be handled first?</p>
+          <p>In bubbling the inner most element's event is handled first and then the outer: the <span class="code-txt">&lt;p&gt;</span> element's click event is handled first, then the <span class="code-txt">&lt;div&gt;</span> element's click event.</p>
+          <p>In capturing the outer most element's event is handled first and then the inner: the <span class="code-txt">&lt;div&gt;</span> element's click event will be handled first, then the <code>&lt;p&gt;</code> element's click event.</p>
+          <p>With the <code class="code-txt">addEventListener()</code> method you can specify the propagation type by using the "useCapture" parameter:</p>
+          
+          <div class="example-code mar-1rm">
+              <code>addEventListener(<em>event</em>, <em>function</em>, <span class="marked"><em>useCapture</em></span>);</code> 
+          </div>
+
+          <p>The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.</p>
+
+          <div class="code-div">
+            <h3>Example</h3>
+            <div class="example-code">
+              <span class="jscolor">
+                document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myP"</span>).<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor" >"click"</span>, myFunction, <span class="jskeywordcolor" >true</span>);<br>
+                document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myDiv"</span>).<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor" >"click"</span>, myFunction, <span class="jskeywordcolor" >true</span>);<span class="jsnumbercolor">
+                </span>
+              </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>The removeEventListener() method</h2>
+          <p>The <code class="code-txt">removeEventListener()</code> method removes event handlers that have been attached with the addEventListener() method:</p>
+
+          <div class="code-div">
+            <h3>Example</h3>
+            <div class="example-code">
+              <span class="jscolor">
+                <em>element</em>.<span class="jspropertycolor">removeEventListener</span>(<span class="jsstringcolor">"mousemove"</span>, myFunction); </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_remove" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>Browser Support</h2>
+          <p>The numbers in the table specifies the first browser version that fully supports these methods.</p>
+
+          <table class="mar-1hlfrm">
+            <tbody><tr>
+              <th style="width:20%; font-size:16px; text-align:left;">Method</th>
+              <th style="width:16%;" title="Chrome"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" class="browserLogo" alt="chrome_ logo"></th>
+              <th style="width:16%;" title="IE/Edge"><img src="https://gxcuf89792.i.lithium.com/t5/image/serverpage/image-id/154232iC9840E6AF53B1AC5/image-size/large?v=1.0&px=999" class="browserLogo" alt="edge_ logo"></th>
+              <th style="width:16%;" title="Firefox"><img src="https://www.pinclipart.com/picdir/big/126-1266805_last-week-firefox-users-were-warned-by-mozilla.png" class="browserLogo" alt="Firefox_logo"></th>
+              <th style="width:16%;" title="Safari"><img src="https://pngimg.com/uploads/safari/safari_PNG38.png" class="browserLogo" alt="Safari_logo"></th>
+              <th style="width:16%;" title="Opera"><img src="https://img.favpng.com/21/14/12/opera-mobile-computer-icons-web-browser-png-favpng-Zbg64B8S47cVkN6aGKzrVp1QP.jpg" class="browserLogo" alt="Opera_logo"></th>                
+            </tr>
+            <tr>
+              <td style="text-align:left;">addEventListener()</td>
+              <td>1.0</td>
+              <td>9.0</td>
+              <td>1.0</td>
+              <td>1.0</td>
+              <td>7.0</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;">removeEventListener()</td>
+              <td>1.0</td>
+              <td>9.0</td>
+              <td>1.0</td>
+              <td>1.0</td>
+              <td>7.0</td>
+            </tr>
+          </tbody></table>
+
+          <p> <b>Note:</b> The <code class="code-txt">addEventListener()</code> and <code class="code-txt">removeEventListener()</code> methods are not supported in IE 8 and earlier versions. However, for these specific browser versions, you can use the <code class="code-txt">attachEvent()</code> method to attach an event handlers to the element, and the <code class="code-txt">detachEvent()</code> method to remove it:</p>
+
+          <div class="example-code mar-1rm">
+              <em>element.</em>attachEvent<em>(event, function);<br>element.</em>detachEvent<em>(event, function);</em>
+          </div>
+
+          <div class="code-div">
+            <h3>Example</h3>
+            <p>Cross-browser solution:</p>
+            <div class="example-code">
+              <span class="jscolor">
+                <span class="jskeywordcolor">var</span> x = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myBtn"</span>);<br><span class="jskeywordcolor">if</span> (x.<span class="jspropertycolor">addEventListener</span>) {&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor">// For all major browsers, except IE 8 and earlier<br></span>&nbsp;&nbsp;x.<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor" >"click"</span>, myFunction);<br>} <span class="jskeywordcolor">else</span> <span class="jskeywordcolor">if</span> (x.<span class="jspropertycolor">attachEvent</span>) {&nbsp;&nbsp; <span class="commentcolor">// For IE 8 and earlier versions<br></span><span class="jsnumbercolor">
+                </span>  &nbsp; 
+                x.<span class="jspropertycolor">attachEvent</span>(<span class="jsstringcolor">"onclick"</span>, myFunction);<br>}<span class="jsnumbercolor">
+                </span> </span>
+            </div>
+            <br>
+            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_crossbrowser" target="blank">Watch the code work</a></button>
+            <br>
+          </div>
+
+          <h2>HTML DOM Event Object Reference</h2>
+          <p>For a list of all HTML DOM events, look at w3schools <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" style="text-decoration-line: underline; color: slateblue;"> HTML DOM Event Object Reference</a>.</p>
+
+          <div class="code-div">
+            <h3>Test Yourself With Exercises</h3>
+            <br>
+            <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html9" target="blank">Test yourself</a></button>
+            <br>
+          </div>
+
       </section>
 
       <!--------- JS HTML DOM Navigation ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Navigation">
         <header>JS HTML DOM Navigation</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
+        <p>With the HTML DOM, you can navigate the node tree using node relationships.</p>
+        <h2>DOM Nodes</h2>
+        <p>According to the W3C HTML DOM standard, everything in an HTML document is a node:</p>
+
         <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
+          <li>The entire document is a document node</li>
+          <li>Every HTML element is an element node</li>
+          <li>The text inside HTML elements are text nodes</li>
+          <li>Every HTML attribute is an attribute node (deprecated)</li>
+          <li>All comments are comment nodes</li>
         </ul>
+
+        <img src="https://www.w3schools.com/js/pic_htmltree.gif">
+
+        <p>With the HTML DOM, all nodes in the node tree can be accessed by JavaScript.</p>
+        <p>New nodes can be created, and all nodes can be modified or deleted.</p>
+
+        <h2>Node Relationships</h2>
+        <p>The nodes in the node tree have a hierarchical relationship to each other.</p>
+        <p>The terms parent, child, and sibling are used to describe the relationships.</p>
+
+        <ul>
+          <li>In a node tree, the top node is called the root (or root node)</li>
+          <li>Every node has exactly one parent, except the root (which has no parent)</li>
+          <li>A node can have a number of children</li>
+          <li>Siblings (brothers or sisters) are nodes with the same parent</li>
+        </ul>
+
+        <div style=" width: 80%; display: flex;">
+          <div style="width: 50%;">
+            <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br><br>
+             &nbsp; <span class="tagnamecolor"><span class="tagcolor">&lt;</span>head<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;&nbsp;&nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>title<span class="tagcolor">&gt;</span></span>DOM Tutorial<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/title<span class="tagcolor">&gt;</span></span><br>
+             &nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/head<span class="tagcolor">&gt;</span></span><br><br>&nbsp;
+             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;&nbsp;&nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>h1<span class="tagcolor">&gt;</span></span>DOM Lesson one<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;&nbsp;&nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>p<span class="tagcolor">&gt;</span></span>Hello world!<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+             &nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+             <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+             </div>
+          </div>
+          <div style="width: 50%; padding-left: 25px;">
+            <img style="margin-top:30px;width:362px;height:255px" src="https://www.w3schools.com/js/pic_navigate.gif" alt="Node tree">
+          </div>
+        </div>
+        <br>
+        <p>From the HTML above you can read:</p>
+        <ul>
+          <li><span class="code-txt">&lt;html&gt;</span> is the root node</li>
+          <li><span class="code-txt">&lt;html&gt;</span> has no parents</li>
+          <li><span class="code-txt">&lt;html&gt;</span> is the parent of <span class="code-txt">&lt;head&gt;</span> and <span class="code-txt">&lt;body&gt;</span></li>
+          <li><span class="code-txt">&lt;head&gt;</span> is the first child of <span class="code-txt">&lt;html&gt;</span></li>
+          <li><span class="code-txt">&lt;body&gt;</span> is the last child of <span class="code-txt">&lt;html&gt;</span></li>
+        </ul>
+        <p>and:</p>
+        <ul>
+          <li><span class="code-txt">&lt;head&gt;</span> has one child: <span class="code-txt">&lt;title&gt;</span></li>
+          <li><span class="code-txt">&lt;title&gt;</span> has one child (a text node): "DOM Tutorial"</li>
+          <li><span class="code-txt">&lt;body&gt;</span> has two children: <span class="code-txt">&lt;h1&gt;</span> and <span class="code-txt">&lt;p&gt;</span></li>
+          <li><span class="code-txt">&lt;h1&gt;</span> has one child: "DOM Lesson one"</li>
+          <li><span class="code-txt">&lt;p&gt;</span> has one child: "Hello world!"</li>
+          <li><span class="code-txt">&lt;h1&gt;</span> and <span class="code-txt">&lt;p&gt;</span> are siblings</li>
+        </ul>
+        <h2>Navigating Between Nodes</h2>
+        <p>You can use the following node properties to navigate between nodes with JavaScript:</p>
+        <ul>
+          <li><code class="code-txt">parentNode</code></li>
+          <li><code class="code-txt">childNodes[nodenumber]</code></li>
+          <li><code class="code-txt">firstChild</code></li>
+          <li><code class="code-txt">lastChild</code></li>
+          <li><code class="code-txt">nextSibling</code></li>
+          <li><code class="code-txt">previousSibling</code></li>
+        </ul>
+        <h2>Child Nodes and Node Values</h2>
+        <p class="highlight">A common error in DOM processing is to expect an element node to contain text.</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>title<span class="attributecolor"> 
+              id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span>DOM Tutorial<span class="tagnamecolor" ><span class="tagcolor">&lt;</span>/title<span class="tagcolor">&gt;</span></span>
+          </div>
+        </div>
+        <p>The element node <span class="code-txt">&lt;title&gt;</span> (in the example above) does not contain text.</p>
+        <p>It contains a text node with the value "DOM Tutorial".</p>
+        <p>The value of the text node can be accessed by the node's <code class="code-txt">innerHTML</code>  property:</p>
+
+        <div class="code-div">
+          <div class="example-code">
+            <span class="jscolor"><span class="jsnumbercolor">
+            </span> <span class="jskeywordcolor">var</span> myTitle =
+            document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span>;<span class="jsnumbercolor">
+            </span> </span>
+          </div>
+        </div>
+        <p>Accessing the <code class="code-txt">innerHTML</code> property is the same as accessing the <code class="code-txt">nodeValue</code> of the first child:</p>
+
+        <div class="code-div">
+          <div class="example-code">
+            <span class="jscolor"><span class="jsnumbercolor">
+            </span> <span class="jskeywordcolor">var</span> myTitle =
+            document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >firstChild</span>.<span class="jspropertycolor">nodeValue</span>; </span>
+          </div>
+        </div>
+
+        <p>Accessing the first child can also be done like this:</p>
+
+        <div class="code-div">
+          <div class="example-code">
+            <span class="jscolor"><span class="jsnumbercolor"></span><span class="jskeywordcolor">var</span> myTitle = document. <span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"demo"</span>).<span class="jspropertycolor">childNodes</span>[<span class="jsnumbercolor">0</span>].<span class="jspropertycolor">nodeValue</span>;<span class="jsnumbercolor"></span></span>
+          </div>
+        </div>
+
+        <p>All the (3) following examples retrieves the text of an <span class="code-txt">&lt;h1&gt;</span> element and copies it into a <span class="code-txt">&lt;p&gt;</span> element:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="id02"</span></span><span class="tagcolor" >&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor" >&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">
+              </span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor" >innerHTML</span> <span class="jsnumbercolor">
+              </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor" >innerHTML</span>;<br>
+              </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml1" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="id02"</span></span><span class="tagcolor" >&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor" >&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jscolor"><span class="jsnumbercolor">
+              </span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id02"</span>).<span class="jspropertycolor" >innerHTML</span> = document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor">firstChild</span>.<span class="jspropertycolor">nodeValue</span>;<br>
+              </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="id02"</span></span><span class="tagcolor" >&gt;</span></span>Hello!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor" >&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jscolor"><span class="jsnumbercolor">
+              </span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id02"</span>).<span class="jspropertycolor" >innerHTML</span> = document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor">childNodes</span>[<span class="jsnumbercolor">0</span>].<span class="jspropertycolor">nodeValue</span>;<br>
+              </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <h2>InnerHTML</h2>
+        <p>In this tutorial we use the innerHTML property to retrieve the content of an HTML element.</p>
+        <p>However, learning the other methods above is useful for understanding the tree structure and the navigation of the DOM.</p>
+
+        <h2>DOM Root Nodes</h2>
+        <p>There are two special properties that allow access to the full document:</p>
+        <ul>
+          <li> <code class="code-txt">document.body</code> - The body of the document</li>
+          <li> <code class="code-txt">document.documentElement</code> - The full document</li>
+        </ul>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <div class="w3-code notranslate htmlHigh">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>Hello World!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>The DOM is very useful!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>This example demonstrates the <span class="tagnamecolor"><span class="tagcolor">&lt;</span>b<span class="tagcolor">&gt;</span></span>document.body<span class="tagnamecolor" ><span class="tagcolor">&lt;</span>/b<span class="tagcolor">&gt;</span></span> property.<span class="tagnamecolor" ><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+              alert(document.<span class="jspropertycolor">body</span>.<span class="jspropertycolor">innerHTML</span>);<br>
+              </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <div class="w3-code notranslate htmlHigh">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>Hello World!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>The DOM is very useful!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>This example demonstrates the <span class="tagnamecolor"><span class="tagcolor">&lt;</span>b<span class="tagcolor">&gt;</span></span>document.documentElement<span class="tagnamecolor" ><span class="tagcolor">&lt;</span>/b<span class="tagcolor">&gt;</span></span> property.<span class="tagnamecolor" ><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+              alert(document.<span class="jspropertycolor">documentElement</span>.<span class="jspropertycolor">innerHTML</span>);<br>
+              </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br>
+              <br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <h2>The nodeName Property</h2>
+        <p>The <span class="code-txt">nodeName</span> property specifies the name of a node.</p>
+        <ul>
+          <li>nodeName is read-only</li>
+          <li>nodeName of an element node is the same as the tag name</li>
+          <li>nodeName of an attribute node is the attribute name</li>
+          <li>nodeName of a text node is always #text</li>
+          <li>nodeName of the document node is always #document</li>
+        </ul>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="id02"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor">innerHTML</span> <span class="jsnumbercolor">
+              </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id01"</span>).<span class="jspropertycolor" >nodeName</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <p class="highlight"><b>Note:</b> <span class="code-txt">nodeName</span> always contains the uppercase tag name of an HTML element.</p>
+
+        <h2>The nodeValue Property</h2>
+        <p>The <span class="code-txt">nodeValue</span> property specifies the value of a node.</p>
+
+        <ul>
+          <li>nodeValue for element nodes is <span class="code-txt">null</span></li>
+          <li>nodeValue for text nodes is the text itself</li>
+          <li>nodeValue for attribute nodes is the attribute value</li>
+        </ul>
+
+        <h2>The nodeType Property</h2>
+        <p>The <span class="code-txt">nodeType</span> property is read only. It returns the type of a node.</p>
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="id02"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor">innerHTML</span> <span class="jsnumbercolor">
+             </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor" >nodeType</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodetype" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <p>The most important nodeType properties are:</p>
+        <table >
+          <tbody>
+            <tr>
+              <th>Node</th>
+              <th>Type</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>ELEMENT_NODE</td>
+              <td>1</td>
+              <td>&lt;h1 class="heading"&gt;W3Schools&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+              <td>ATTRIBUTE_NODE</td>
+              <td>2</td>
+              <td>&nbsp;class = "heading" (deprecated)</td>
+            </tr>
+            <tr>
+              <td>TEXT_NODE</td>
+              <td>3</td>
+              <td>W3Schools</td>
+            </tr>
+            <tr>
+              <td>COMMENT_NODE</td>
+              <td>8</td>
+              <td>&lt;!-- This is a comment --&gt;</td>
+            </tr>
+            <tr>
+              <td>DOCUMENT_NODE</td>
+              <td>9</td>
+              <td>The HTML document itself (the parent of &lt;html&gt;)</td>
+            </tr>
+            <tr>
+              <td>DOCUMENT_TYPE_NODE</td>
+              <td>10</td>
+              <td>&lt;!Doctype html&gt;</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="highlight">Type 2 is deprecated in the HTML DOM (but works). It is not deprecated in the XML DOM.</p>
       </section>
 
       <!--------- JS HTML DOM Elements (Nodes) ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Elements_(Nodes)">
         <header>JS HTML DOM Elements (Nodes)</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+        <p>To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element.</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor" >="div1"</span></span><span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+              <span class="jskeywordcolor">var</span> para = document.<span class="jspropertycolor">createElement</span>(<span class="jsstringcolor">"p"</span>);<br>
+              <span class="jskeywordcolor">var</span> node = document.<span class="jspropertycolor">createTextNode</span>(<span class="jsstringcolor">"This is new."</span>);<br>
+              para.<span class="jspropertycolor">appendChild</span>(node);<br><br><span class="jsnumbercolor">
+              </span> <span class="jskeywordcolor">var</span>
+              element = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"div1"</span>);<br>
+              element.<span class="jspropertycolor">appendChild</span>(para);<br>
+              </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <h2>Creating new HTML Elements - insertBefore()</h2>
+        <p>The <span class="code-txt">appendChild()</span>  method in the previous example, appended the new element as the last child of the parent.</p><br>
+        <p>If you don't want that you can use the <span class="code-txt">insertBefore()</span> method:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor" >="div1"</span></span><span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+              <span class="jskeywordcolor">var</span> para = document.<span class="jspropertycolor">createElement</span>(<span class="jsstringcolor">"p"</span>);<br>
+              <span class="jskeywordcolor">var</span> node = document.<span class="jspropertycolor">createTextNode</span>(<span class="jsstringcolor">"This is new."</span>);<br>
+              para.<span class="jspropertycolor">appendChild</span>(node);<br><br><span class="jsnumbercolor">
+              </span> <span class="jskeywordcolor">var</span>
+              element = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"div1"</span>);<br>
+              <span class="jsnumbercolor">
+              </span> <span class="jskeywordcolor">var</span>
+              child = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"p1"</span>);<br>
+              element.<span class="jspropertycolor">insertBefore</span>(para, child);<br>
+              </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate2" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <h2>Removing Existing HTML Elements</h2>
+        <p>To remove an HTML element, use the <code class="code-txt">remove()</code> method:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor" >="div1"</span></span><span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span><span class="jscolor"><br>
+                <span class="jskeywordcolor">var</span> elmnt = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"p1"</span>);<br><span class="jsnumbercolor">
+                </span>  elmnt.<span class="jspropertycolor">remove</span>();<br>
+                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <p class="highlight-red">The <span class="code-txt">remove()</span>  method does not work in older browsers, see the example below on how to use <span class="code-txt">removeChild()</span> instead.</p>
+
+        <h2>Removing a Child Node</h2>
+        <p>For browsers that does not support the <code class="code-txt">remove()</code> method, you have to find the parent node to remove an element:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor" >="div1"</span></span><span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              &nbsp;
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><br><span class="jsnumbercolor">
+              </span> <span class="jskeywordcolor">var</span>
+              element = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"div1"</span>);<br>
+              <span class="jsnumbercolor">
+              </span> <span class="jskeywordcolor">var</span>
+              child = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"p1"</span>);<br>
+              parent.<span class="jspropertycolor">removeChild</span>(child);<br>
+              </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremovechild" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <h2>Replacing HTML Elements</h2>
+        <p>To replace an element to the HTML DOM, use the <span class="code-txt">replaceChild()</span> method:</p>
       </section>
+
+      <div class="code-div">
+        <h3>Example</h3>
+        <div class="example-code">
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>div<span class="attributecolor"> id<span class="attributevaluecolor" >="div1"</span></span><span class="tagcolor">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+            <span class="jskeywordcolor">var</span> para = document.<span class="jspropertycolor">createElement</span>(<span class="jsstringcolor">"p"</span>);<br>
+            <span class="jskeywordcolor">var</span> node = document.<span class="jspropertycolor">createTextNode</span>(<span class="jsstringcolor">"This is new."</span>);<br>
+            para.<span class="jspropertycolor">appendChild</span>(node);<br><br><span class="jsnumbercolor">
+            </span> <span class="jskeywordcolor">var</span>
+            parent = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"div1"</span>);<br>
+            <span class="jsnumbercolor">
+            </span> <span class="jskeywordcolor">var</span>
+            child = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"p1"</span>);<br>
+            parent.<span class="jspropertycolor">replaceChild</span>(para, child);<br>
+            </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+        </div>
+        <br>
+        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementreplace" target="blank">Watch the code work</a></button>
+        <br>
+      </div>
 
       <!--------- JS HTML DOM Collections ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Collections">
         <header>JS HTML DOM Collections</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+        <h2>The HTMLCollection Object</h2>
+        <p>The <span class="code-txt">getElementsByTagName()</span> method returns an <span class="code-txt">HTMLCollection</span> object.</p>
+        <p>An <span class="code-txt">HTMLCollection</span> object is an array-like list (collection) of HTML elements.</p>
+        <p>The following code selects all <span class="code-txt">&lt;p&gt;</span> elements in a document:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+              <p  class="code-p"><code><span class="jscolor">
+                <span class="jskeywordcolor">var</span>
+                x = document.<span class="jspropertycolor>getElementsByTagName</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor">
+                </span> </span>
+              </code>
+            </p>
+            <p>The elements in the collection can be accessed by an index number.</p>
+            <p>To access the second <span class="code-txt">&lt;p&gt;</span> element you can write:</p>
+              <p  class="code-p"><code><span class="jscolor">
+                y = x[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor" >
+                </span> </span>
+              </code>
+            </p>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <p><b>Note:</b> The index starts at 0.</p>
+
+        <h2>HTML HTMLCollection Length</h2>
+        <p>The <span class="code-txt">length</span> property defines the number of elements in an <span class="code-txt">HTMLCollection:</span></p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="jscolor">
+              <span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br>
+              document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myCollection.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor">
+              </span> </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_length" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <p>The <span class="code-txt">length</span> property is useful when you want to loop through the elements in a collection:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="jscolor">
+              <span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br>
+              <span class="jskeywordcolor">var</span> i;<br>
+              <span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor" >0</span>; i &lt; myCollection.<span class="jspropertycolor" >length</span>; i++) {<br><span class="jsnumbercolor">
+              </span>&nbsp;&nbsp;myCollection[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span> </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_loop" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <div class="highlight">
+          <p><b>An HTMLCollection is NOT an array!</b></p>
+          <p>An HTMLCollection may look like an array, but it is not.</p>
+          <p>You can loop through the list and refer to the elements with a number (just like an array).</p>
+          <p>However, you cannot use array methods like <span class="code-txt">valueOf()</span>, <span class="code-txt">pop()</span>, <span class="code-txt">push()</span>, or <span class="code-txt">join()</span> on an HTMLCollection.</p>
+        </div>
       </section>
 
       <!--------- JS HTML DOM Node Lists ---------->
 
       <section class="main-section" id="JS_HTML_DOM_Node_Lists">
         <header>JS HTML DOM Node Lists</header>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-        <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-        </ul>
+        <h2>The HTML DOM NodeList Object</h2>
+        <p>A <span class="code-txt">NodeList</span> object is a list (collection) of nodes extracted from a document.</p>
+        <p>A <span class="code-txt">NodeList</span> object is almost the same as an <span class="code-txt">HTMLCollection</span> object.</p>
+        <p>Some (older) browsers return a <span class="code-txt">NodeList</span> object instead of an <span class="code-txt">HTMLCollection</span> for methods like <span class="code-txt">getElementsByClassName()</span>.</p>
+        <p>All browsers return a <span class="code-txt"> NodeList</span> object for the property <span class="code-txt">childNodes</span>.</p>
+        <p>Most browsers return a <span class="code-txt">NodeList</span> object for the method <span class="code-txt"> querySelectorAll()</span>.</p>
+        <p>The following code selects all <span class="code-txt">&lt;p&gt;</span> nodes in a document:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <p class="code-p">
+            <code>
+              <span class="jscolor"><span class="jskeywordcolor">var</span> myNodeList = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor"></span></span>
+            </code>
+          </p>
+          <p>The elements in the NodeList can be accessed by an index number.</p>
+          <p>To access the second <span class="code-txt">&lt;p&gt;</span> element you can write:</p>
+          <p class="code-p">
+            <code>
+              <span class="jscolor">y = myNodeList[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor"></span></span>
+            </code>
+          </p>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+        <p><b>Note:</b> The index starts at 0.</p>
+        <h2>HTML DOM Node List Length</h2>
+        <p>The <span class="code-txt">length</span> property defines the number of nodes in a node list:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <div class="example-code">
+            <span class="jscolor">
+              <span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br>
+              document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myNodelist.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor">
+              </span> </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_length" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+        <p>The <span class="code-txt">length</span> property is useful when you want to loop through the nodes in a node list:</p>
+
+        <div class="code-div">
+          <h3>Example</h3>
+          <p>Change the background color of all <span class="code-txt">&lt;p&gt;</span> elements in a node list:</p>
+          <div class="example-code">
+            <span class="jscolor">
+              <span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br>
+              <span class="jskeywordcolor">var</span> i;<br>
+              <span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor">0</span>; i &lt; myNodelist.<span class="jspropertycolor">length</span>; i++) {<br><span class="jsnumbercolor">
+              </span>&nbsp; myNodelist[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span>
+            </span>
+          </div>
+          <br>
+          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_loop" target="blank">Watch the code work</a></button>
+          <br>
+        </div>
+
+
+        <h2>The Difference Between an HTMLCollection and a NodeList</h2>
+        <p>An HTMLCollection (previous chapter) is a collection of HTML elements.</p>
+        <p>A NodeList is a collection of document nodes.</p>
+        <p>A NodeList and an HTML collection is very much the same thing.</p>
+        <p>Both an HTMLCollection object and a NodeList object is an array-like list (collection) of objects.</p>
+        <p>Both have a length property defining the number of items in the list (collection).</p>
+        <p>Both provide an index (0, 1, 2, 3, 4, ...) to access each item like an array.</p>
+        <p>HTMLCollection items can be accessed by their name, id, or index number.</p>
+        <p>NodeList items can only be accessed by their index number.</p>
+        <p>Only the NodeList object can contain attribute nodes and text nodes.</p>
+        <div class="highlight mar-1rm">
+          <p><b>A node list is not an array!</b></p>
+          <p>A node list may look like an array, but it is not.</p>
+          <p>You can loop through the node list and refer to its nodes like an array.</p>
+          <p>However, you cannot use Array Methods, like valueOf(), push(), pop(), or join() on a node list.</p>
+        </div>
       </section>
-      
     </main>
   </body>

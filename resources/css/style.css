@@ -12,28 +12,35 @@ header{
   font-size: 2.1rem;
   font-weight: bold;
   color: #399bd1;
-  padding: 25px 0;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #a316a3a4;
+  color: #ad05adcb;
+  padding: 2rem 0;
 }
 h3 {
   font-size: 1.3rem;
   font-weight: bold;
   color: #da560a;
 }
-h1,
-h2,
 p{
-  padding: 5px 0;
+  font-weight: 550;
+  line-height: 1.7em;
+  margin: .5rem 0;
+}
+ul{
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: 1.8em;
 }
 img {
   width: auto;
@@ -44,24 +51,42 @@ a{
 }
 table {
   width: 80%;
+  margin: 1rem 0;
 }
-td{
-  width: 40%;
-  padding: 5px 0;
+th{
+  width: 1fr;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
 }
 td{
   border-bottom: 1px solid #ddd;
+  width: 1fr;
   padding: 10px;
 }
-/***** End Universal Styles *****/
-
 table tr:nth-child(even){
   background-color: #f2f2f2;
 }
-table th {
-  padding: 10px 0 ;
-  text-align: left;
+
+.mar-1rm{
+  margin: 1rem 0;
 }
+.mar-1hlfrm{
+  margin: 1.5rem 0;
+}
+.mar-2rm{
+  margin: 2rem 0;
+}
+.mar-2hlfrm{
+  margin: 2.5rem 0;
+}
+.mar-3rm{
+  margin: 3rem 0;
+}
+/***** End Universal Styles *****/
+
+
+
 
 /***** Examples Code Colors *****/
 
@@ -70,9 +95,11 @@ table th {
   color: rgba(250, 115, 74, 0.897);
 }
 .jscolor,
-.cssdelimitercolor,
-.tagcolor{
+.cssdelimitercolor{
   color: rgb(255, 255, 255);
+}
+.tagcolor{
+  color: rgb(172, 246, 252);
 }
 .jskeywordcolor,
 .csspropertycolor,
@@ -97,7 +124,8 @@ table th {
 
 .code-div{
   background-color: rgba(185, 185, 182, 0.274);
-  padding: 20px 30px;
+  margin: 1rem 0;
+  padding: 10px;
 }
 .code-p{
   background-color: rgb(43, 41, 41);
@@ -111,13 +139,24 @@ table th {
 }
 .example-code{
   background-color: rgb(37, 36, 36);
-  color: #d6d6d4;
-  padding: 20px;
+  color: #ffffff;
+  padding: 10px;
+}
+.code-p,
+.code-txt,
+.example-code{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .highlight{
-  background-color: rgba(243, 247, 189, 0.452);
-  padding: 10px 0;
+  background-color: rgba(240, 245, 169, 0.452);
+  padding: 15px;
+}
+.highlight-red{
+  background-color: rgba(250, 174, 174, 0.452);
+  padding: 15px;
 }
 
 #navbar {
@@ -142,7 +181,6 @@ table th {
 }
 .nav-link{
   display: block;
-  background-color: rgba(214, 245, 243, 0.801);
   color: #5a5656;
   font-weight: 600;
   margin: 2px 0;
@@ -184,6 +222,16 @@ table th {
   max-width: 80%;
   padding: 2% 5%;
 }
+
+/***** Browser Support Logos *****/
+
+.browserLogo{
+  width: 1fr;
+  height: 30px;
+}
+
+/***** End Browser Support Logos *****/
+
 @media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
