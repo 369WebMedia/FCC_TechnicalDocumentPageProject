@@ -112,7 +112,6 @@
         <p>The programming interface is the properties and methods of each object.</p>
         <p>A property is a value that you can get or set (like changing the content of an HTML element).</p>
         <p>A method is an action you can do (like add or deleting an HTML element).</p>
-        <!--------- CODE-DIV ---------->
         <div class="code-div">
           <h3>Example</h3>
           <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <code class="code-txt">< p ></code> element with <code class="code-txt">id="demo"</code> :</p>
@@ -120,8 +119,7 @@
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">document.getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span class="jsstringcolor">"Hello World!"</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="blank">Watch the code work</a></button>
-          <br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" class="button" target="blank">Watch this code at work</a>
         </div>
         <p>In the example above, <code class="code-txt">getElementById</code> is a method, while <code class="code-txt">innerHTML</code> is a property.</p>
         <h2>The getElementById Method</h2>
@@ -401,7 +399,7 @@
           <h3>Example</h3>
           <p class="code-p"><code>var myElement = document.getElementById("intro");</code></p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>If the element is found, the method will return the element as an object (in myElement).</p>
@@ -412,7 +410,7 @@
           <h3>Example</h3>
           <p class="code-p"><code>var x = document.getElementsByTagName("p");</code></p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>This example finds the element with <span class="code-txt">id="main"</span>, and then finds all <span class="code-txt">&lt;p&gt;</span>  elements inside <span class="code-txt">"main"</span>:</p>
@@ -421,7 +419,7 @@
           <p class="code-p"><code>var x = document.getElementById("main");</code></p>
           <p class="code-p"><code>var y = x.getElementsByTagName("p");</code></p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <h2>Finding HTML Elements by Class Name</h2>
@@ -431,7 +429,7 @@
           <h3>Example</h3>
           <p class="code-p"><code>var x = document.getElementsByClassName("intro");</code></p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="blank">Watch this code at work</a></button><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" class="button" target="blank">Watch this code at work</a><br>
         </div><br>
         <p class="highlight">Finding elements by class name does not work in Internet Explorer 8 and earlier versions.</p><br>
         <h2>Finding HTML Elements by CSS Selectors</h2>
@@ -440,7 +438,7 @@
         <div class="code-div">
           <h3>Example</h3>
           <p class="code-p"><code>var x = document.querySelectorAll("p.intro");</code></p><br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall" target="blank">Watch the code work</a></button><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall" class="button" target="blank">Watch this code at work</a><br>
         </div><br>
         <p class="highlight">The <code class="code-txt">querySelectorAll()</code> method does not work in Internet Explorer 8 and earlier versions.</p><br>
         <h2>Finding HTML Elements by HTML Object Collections</h2>
@@ -457,7 +455,7 @@
             <p><code>document.getElementById("demo").innerHTML = text;</code></p>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -475,7 +473,7 @@
           <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_title" target="blank">document.title</a></li>
         </ul>
         <br><br>
-        <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1" target="blank">Test Yourself</a></button>
+        <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1" class="button" target="blank">Test Yourself</a>
       </section>
 
       <!--------- JS HTML DOM Changing HTML ---------->
@@ -502,7 +500,7 @@
              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_date" target="blank">Watch this code at work</a></button>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_date" class="button" target="blank">Watch this code at work</a>
         <br>
         </div>
         <br>
@@ -526,7 +524,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-        <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" target="blank">Watch the code work</a></button>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" class="button" target="blank">Watch this code at work</a>
         <br>
         </div>
         <p>Example above explained:</p>
@@ -551,7 +549,7 @@
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>Example explained:</p>
@@ -580,9 +578,9 @@
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" class="button" target="blank">Watch this code at work</a>
           <br><br>
-          <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html4" target="blank">Test yourself here</a></button>
+          <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html4" class="button" target="blank">Test yourself here</a>
           <br>
         </div>
       </section>
@@ -612,7 +610,7 @@
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_style" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_style" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -645,16 +643,16 @@
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_color2" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_color2" class="button" target="blank">Watch this code at work</a>
           <br>
           <br>
-          <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html6" target="blank">Test yourself here</a></button>
+          <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html6" class="button" target="blank">Test yourself here</a>
           <br>
         </div>
         <br>
         <br>
         <h2>More Examples</h2>
-        <p><button><a  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_visibility" target="blank">Visibility</a></button> -- How to make an element invisible. Do you want to show the element or not?</p>
+        <p><a  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_visibility" target="blank">Visibility</a> -- How to make an element invisible. Do you want to show the element or not?</p>
         <br>
         <br>
         <h2>HTML DOM Style Object Reference</h2>
@@ -710,7 +708,7 @@
               </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_2" target="blank">See our page so far</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_2" class="button" target="blank">See our page so far</a>
           <br>
         </div>
         <br>
@@ -747,7 +745,7 @@
             </span>  &nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>} </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3" target="blank">Watch the animation at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3" class="button" target="blank">Watch the animation at work</a>
           <br>
         </div>
         <br>
@@ -815,7 +813,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick2" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -835,7 +833,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick3" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick3" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -851,7 +849,7 @@
             </code>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1" target="blank">Watch this code at work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -871,7 +869,7 @@
             </code>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events2" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <br>
@@ -892,7 +890,7 @@
             </code>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onload" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onload" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -910,7 +908,7 @@
             </code>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -923,7 +921,7 @@
             <div onmouseover="this.innerHTML='Thank You'" onmouseout="this.innerHTML='Mouse Over Me'">Mouse Over Me</div>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mouseover" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mouseover" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -951,15 +949,15 @@
               </script>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mousedown" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mousedown" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
         <h2>More Examples</h2>
-        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmousedown" target="blank"><code class="code-txt">onmousedown</code> and <code class="code-txt">onmouseup</code></a></button> --Change an image when a user holds down the mouse button.</p>
-        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onload" target="blank"><code class="code-txt">onload</code></a></button> --Display an alert box when the page has finished loading.</p>
-        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onfocus" target="blank"><code class="code-txt">onfocus</code></a></button> --Change the background-color of an input field when it gets focus.</p>
-        <p><button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmouse" target="blank">Mouse Events</a></button> --Change the color of an element when the cursor moves over it.</p>
+        <p><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmousedown" target="blank"><code class="code-txt">onmousedown</code> and <code class="code-txt">onmouseup</code></a> --Change an image when a user holds down the mouse button.</p>
+        <p><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onload" target="blank"><code class="code-txt">onload</code></a> --Display an alert box when the page has finished loading.</p>
+        <p><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onfocus" target="blank"><code class="code-txt">onfocus</code></a> --Change the background-color of an input field when it gets focus.</p>
+        <p><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onmouse" target="blank">Mouse Events</a> --Change the color of an element when the cursor moves over it.</p>
         <h2>HTML DOM Event Object Reference</h2>
         <p>For a list of all HTML DOM events, visit w3schools.com <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="blank" style="text-decoration-line: underline; color: slateblue;">HTML DOM Event Object Reference</a> page.</p>
       </section>
@@ -979,7 +977,7 @@
             </code>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>The <code class="code-txt">addEventListener()</code> method attaches an event handler to the specified element.</p>
@@ -1009,7 +1007,7 @@
             </span> <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>, &nbsp;<span class="jskeywordcolor">function</span>(){ &nbsp;alert(<span class="jsstringcolor">"Hello World!"</span>); &nbsp;}); </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>You can also refer to an external "named" function:</p>
@@ -1021,7 +1019,7 @@
             </span>  <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"click"</span>,  myFunction);<br><br><span class="jskeywordcolor">function</span> myFunction() {<br>&nbsp;&nbsp;alert (<span class="jsstringcolor">"Hello World!"</span>);<br>} </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add2" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <h2>Add Many Event Handlers to the Same Element</h2>
@@ -1035,7 +1033,7 @@
               </span>  </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
           <p>You can add events of different types to the same element:</p>
@@ -1048,7 +1046,7 @@
                 <em>element</em>.<span class="jspropertycolor">addEventListener</span>(<span class="jsstringcolor">"mouseout"</span>, myThirdFunction); </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1065,7 +1063,7 @@
                 </span> </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_dom" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_dom" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1080,7 +1078,7 @@
                 </span> </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_parameters" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_parameters" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1107,7 +1105,7 @@
               </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1121,7 +1119,7 @@
                 <em>element</em>.<span class="jspropertycolor">removeEventListener</span>(<span class="jsstringcolor">"mousemove"</span>, myFunction); </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_remove" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_remove" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1172,7 +1170,7 @@
                 </span> </span>
             </div>
             <br>
-            <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_crossbrowser" target="blank">Watch the code work</a></button>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_crossbrowser" class="button" target="blank">Watch this code at work</a>
             <br>
           </div>
 
@@ -1182,7 +1180,7 @@
           <div class="code-div">
             <h3>Test Yourself With Exercises</h3>
             <br>
-            <button><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html9" target="blank">Test yourself</a></button>
+            <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html9" class="button" target="blank">Test yourself</a>
             <br>
           </div>
 
@@ -1321,7 +1319,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml1" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml1" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1337,7 +1335,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1353,7 +1351,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1389,7 +1387,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1414,7 +1412,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1436,7 +1434,7 @@
               </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id01"</span>).<span class="jspropertycolor" >nodeName</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1461,7 +1459,7 @@
              </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor" >nodeType</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodetype" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodetype" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1532,7 +1530,7 @@
               </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1561,7 +1559,7 @@
               </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate2" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate2" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1582,7 +1580,7 @@
                 </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p class="highlight-red">The <span class="code-txt">remove()</span>  method does not work in older browsers, see the example below on how to use <span class="code-txt">removeChild()</span> instead.</p>
@@ -1608,7 +1606,7 @@
               </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremovechild" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremovechild" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <h2>Replacing HTML Elements</h2>
@@ -1634,7 +1632,7 @@
               </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementreplace" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementreplace" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
       </section>
@@ -1664,7 +1662,7 @@
               </code>
             </p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
 
@@ -1681,7 +1679,7 @@
               </span> </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_length" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_length" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>The <span class="code-txt">length</span> property is useful when you want to loop through the elements in a collection:</p>
@@ -1695,7 +1693,7 @@
               </span>&nbsp;&nbsp;myCollection[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span> </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_loop" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_loop" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <div class="highlight">
@@ -1730,7 +1728,7 @@
             </code>
           </p>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p><b>Note:</b> The index starts at 0.</p>
@@ -1745,7 +1743,7 @@
               </span> </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_length" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_length" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <p>The <span class="code-txt">length</span> property is useful when you want to loop through the nodes in a node list:</p>
@@ -1761,7 +1759,7 @@
             </span>
           </div>
           <br>
-          <button><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_loop" target="blank">Watch the code work</a></button>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_loop" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
         <h2>The Difference Between an HTMLCollection and a NodeList</h2>
