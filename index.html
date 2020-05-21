@@ -17,46 +17,42 @@
     <!--------- navbar JS HTML DOM ---------->
     <nav id="navbar">
       <header>JS HTML DOM</header>
-      <ul>
-        <li>
+      <div class="topnav">
+        <div class="menubtn">
+          <div class="hmbrgr"></div>
+          <div class="hmbrgr"></div>
+          <div class="hmbrgr"></div>
+        </div>
+        <div class="menubtn-content">
           <a class="nav-link" href="#JavaScript_HTML_DOM">JavaScript HTML DOM</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Methods">JS HTML DOM Methods</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Document">JS HTML DOM Document</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Elements">JS HTML DOM Elements</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Changing_HTML">JS HTML DOM Changing HTML</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Changing_CSS">JS HTML DOM Changing CSS</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Animation">JS HTML DOM Animation</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Events">JS HTML DOM Events</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_EventListener">JS HTML DOM EventListener</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Navigation">JS HTML DOM Navigation</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Elements_(Nodes)">JS HTML DOM Elements (Nodes)</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Collections">JS HTML DOM Collections</a>
-        </li>
-        <li>
           <a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a>
-        </li>
+        </div>
+      </div>
+      <ul id="nav-ul">
+        <li><a class="nav-link" href="#JavaScript_HTML_DOM">JavaScript HTML DOM</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Methods">JS HTML DOM Methods</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Document">JS HTML DOM Document</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Elements">JS HTML DOM Elements</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Changing_HTML">JS HTML DOM Changing HTML</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Changing_CSS">JS HTML DOM Changing CSS</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Animation">JS HTML DOM Animation</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Events">JS HTML DOM Events</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_EventListener">JS HTML DOM EventListener</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Navigation">JS HTML DOM Navigation</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Elements_(Nodes)">JS HTML DOM Elements (Nodes)</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Collections">JS HTML DOM Collections</a></li>
+        <li><a class="nav-link" href="#JS_HTML_DOM_Node_Lists">JS HTML DOM Node Lists</a></li>
       </ul>
     </nav>
     <!---------- MAIN ----------->
@@ -933,7 +929,7 @@
           <div>
             <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: #ff4d4d; padding: 5px 20px; color: seashell; font-size: 2rem; font-weight: 700;">Click On Me</div>
             <script type="application/javascript">
-              <!--
+              
               function mDown(obj)
               {
               obj.style.backgroundColor="#cd3299";
