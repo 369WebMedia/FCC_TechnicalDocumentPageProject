@@ -52,6 +52,7 @@ a{
 table {
   width: 80%;
   margin: 1rem 0;
+  overflow: auto;
 }
 th{
   width: 1fr;
@@ -133,6 +134,7 @@ table tr:nth-child(even){
 .topnav {
   position: relative;
   display: none;
+  cursor: pointer;
 }
 .menubtn {
   background-color: #4CAF50;
@@ -266,6 +268,28 @@ table tr:nth-child(even){
   max-width: 80%;
   padding: 2% 5%;
 }
+.button{
+  background-color: rgb(250, 95, 34);
+  padding:0.3em 1.2em;
+  margin:0 0.1em 1em 0;
+  margin-bottom: 1rem;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:.5em;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  font-size: inherit;
+  font-weight:600;
+  color:#FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  text-align:center;
+  transition: all 0.5s;
+  }
+  .button:hover{
+    background-color: rgb(63, 192, 3);
+    border-color: #1bfda649;
+    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  }
 
 /***** Browser Support Logos *****/
 .browserLogo{
@@ -337,7 +361,7 @@ table tr:nth-child(even){
   }
   
   .img-div{
-    max-width: 100vw;
+    max-width: 90vw;
     padding: 2%;
   }
   .img-div > img{
@@ -410,10 +434,13 @@ table tr:nth-child(even){
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  #main-doc {background: rgb(238, 255, 0);}
+  #main-doc {background: rgba(250, 147, 250, 0.356);}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #main-doc {background: rgb(248, 210, 216);}
+  #main-doc {
+    background: rgb(248, 210, 216);
+    max-width: 80%;
+  }
 }
