@@ -37,8 +37,9 @@ p{
   font-weight: 400;
 }
 ul{
-  font-weight: 600;
+  font-weight: 500;
   padding: 0 1.5rem;
+  margin: 1rem 0;
   line-height: 1.8em;
 }
 img {
@@ -72,26 +73,22 @@ table tr:nth-child(even){
 #main-doc {
   position: absolute;
 }
-.main-section{
-  margin-bottom: 30px;
-  padding: 15vw .5rem;
-}
 .main-section > ul{
   list-style-type: disc;
 }
 /***** Menu *****/
 #navbar {
   position: fixed;
-  width: 280px;
+  width: 275px;
   top: 0px;
   left: 0px;
   height: 100%;
-  background-color: ivory;
+  background-color: rgb(59, 59, 58);
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
   z-index: 1;
 }
-#navbar > header{
+#nav-header{ 
   margin: 20px 0;
   padding-left: 20px;
 }
@@ -103,7 +100,7 @@ table tr:nth-child(even){
 }
 .nav-link{
   display: block;
-  color: #5a5656;
+  color: #dddbdb;
   font-weight: 600;
   margin: 2px 0;
   padding: 10px 0px 10px 20px;
@@ -121,11 +118,11 @@ table tr:nth-child(even){
   background-color: #4CAF50;
   width: auto;
   height: auto;
-  padding: 3vw 6vw;
+  padding: .5rem 3rem;
   border: none;
 }
 .hmbrgr{
-  width: 7vw;
+  width: 2.5rem;
   height: 5px;
   background-color: rgb(255, 255, 255);
   margin: 6px 0;
@@ -134,11 +131,11 @@ table tr:nth-child(even){
 .menubtn-content {
   display: none;
   position: absolute;
-  overflow-y: scroll;
   background-color: #f1f1f1;
-  width: 45vw;
+  width: 200%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  overflow-y: scroll;
 }
 .menubtn-content a {
   font-size: 1rem;
@@ -198,20 +195,18 @@ table tr:nth-child(even){
 .example-code{
   background-color: rgb(37, 36, 36);
   color: #ffffff;
-  padding: 5%;
-  overflow-x: scroll;
+  padding: 1rem;
 }
 .code-p{
   background-color: rgb(43, 41, 41);
   color: #d6d6d4;
-  padding: 5%;
+  padding: 1rem;
 }
 .code-txt{
   background-color: rgba(252, 216, 170, 0.233);
   color: #f72c2c;
-  padding: 1px 5px;
+  padding: 1px 3px;
 }
-
 .code-p,
 .code-txt,
 .example-code{
@@ -219,7 +214,6 @@ table tr:nth-child(even){
   font-size: 1rem;
   font-style: italic;
 }
-
 .highlight{
   background-color: rgba(240, 245, 169, 0.452);
 }
@@ -227,19 +221,20 @@ table tr:nth-child(even){
   background-color: rgba(250, 174, 174, 0.452);
   padding: 15px;
 }
+.hglt-txt{
+  width: 90%;
+}
 .img-div{
-  background-color: rgba(228, 228, 227, 0.555);
-  max-width: 90%;
+  width: 90%;
   height: auto;
   padding: 0;
 }
 .img-div > img{
   background-color: white;
   max-width: 100%;
-  height: 20vw;
-  padding: 0 15%;
+  height: 17rem;
+  padding: 0 10%;
 }
-
 .example-method{
   background-color: rgba(228, 228, 227, 0.555);
   max-width: 80%;
@@ -325,24 +320,18 @@ table tr:nth-child(even){
     height: 15em;
     padding: 0 3%;
   }
-  .button{
-    font-size: .75rem;
-    font-weight: 600;
-    padding: .75em;
-  }
+}
+/* Extra small devices (phones, 766px and down) */
+@media only screen and (max-width: 767px) {
   #nodenavi-div{
     flex-direction: column;
-    width: 100%;
-  }
-  #nodenavi-div > div{
-    width: 100%;
+    width: 90%;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px to 767px) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   #main-doc {
-    background: lightgreen;
     /**position: absolute;**/
     margin-top: 90px;
     margin-left: 0;
@@ -363,7 +352,6 @@ table tr:nth-child(even){
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  #main-doc {background: lightblue;}
 }
 .code-txt,
 p{
@@ -375,7 +363,6 @@ header{
 #navbar > header{
   font-size: 2.5rem;
 }
-
 
 /* topmenu navbar  (tablets/mobile, under 992px) */
 @media only screen and (max-width: 991px) {
@@ -397,17 +384,16 @@ header{
     background-color: rgb(59, 59, 58);
     z-index: 1;
   }
-  #navbar > header{
-    margin: 0;
+  #nav-header{
+    font-size: 1.75rem;
     font-weight: bold;
     color: #d9eaf3;
+    margin: 0;
     padding-right: 1rem;
   }
-  
   .topnav {
     display: block;
   }
-  
   #main-doc {
     position: absolute;
     max-width: 94%;
@@ -416,9 +402,9 @@ header{
     align-items: center;
     overflow: hidden;
     padding: 3%;
-  }/**
+  }
   .main-section {
-    padding: 5rem 5vw 0 3vw;
+    padding: 6rem 1rem 0 2vw;
   }
   .code-div{
     width: 110%;
@@ -429,11 +415,11 @@ header{
   }
   .example-code{
     display: block;
-    width: 110%;
+    width: 95%;
     margin-left: -5%;
-    padding: 1rem 20% 1rem 5%;
-    overflow: hidden;
-  } **/
+    padding: 1rem 50% 1rem 5%;
+    overflow-x: scroll;
+  }
   .highlight{
     width: 110%;
     margin-left: -5%;
@@ -444,11 +430,23 @@ header{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #main-doc {
-    background: rgba(250, 147, 250, 0.356);
-    margin-left: 21vw;
+    margin-left: 300px;
     margin-bottom: 110px;
     max-width: 70vw;
   }
+  .nav-hder-div{
+    background-color: #4CAF50;
+    padding: 1rem 0;
+  }
+  #nav-header{
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+  .main-section{
+    margin-bottom: 30px;
+    padding: 5vw .5rem;
+  }
+  
   .highlight{
     padding: .5rem;
     margin-top: 1rem;
@@ -457,7 +455,5 @@ header{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #main-doc {
-    background: rgb(248, 210, 216);
-  }
+  
 }
