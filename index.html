@@ -110,7 +110,7 @@
         <p>A method is an action you can do (like add or deleting an HTML element).</p>
         <div class="code-div">
           <h3>Example</h3>
-          <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <code class="code-txt">< p ></code> element with <code class="code-txt">id="demo"</code> :</p>
+          <p>The following example changes the content (<code class="code-txt">innerHTML</code>) of the <span class="code-txt">&lt;p&gt;</span> element with <code class="code-txt">id="demo"</code> :</p>
           <div class="example-code">
             <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">document.getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span class="jsstringcolor">"Hello World!"</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
           </div>
@@ -901,10 +901,10 @@
           <h3>Example</h3>
           <p>Assign an onclick event to a button element:</p>
           <div class="example-code">
-            <code>
+            <p>
                 <span class="tagnamecolor"><span class="tagcolor">&lt;</span>input<span class="attributecolor"> type<span class="attributevaluecolor" >="text"</span> id<span class="attributevaluecolor" >="fname"</span>
                 onchange<span class="attributevaluecolor">="upperCase()"</span></span><span class="tagcolor">&gt;</span></span>
-            </code>
+            </p>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange" class="button" target="blank">Watch this code at work</a>
@@ -971,16 +971,15 @@
           <p>Add an event listener that fires when a user clicks a button:</p>
           <div class="example-code">
             <code>
-              <span class="jscolor"><span class="jsnumbercolor">
-              </span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myBtn"</span>).<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor">"click"</span>, displayDate); </span>
+              <span class="jscolor"><span class="jsnumbercolor"></span> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"myBtn"</span>).<span class="jspropertycolor" >addEventListener</span>(<span class="jsstringcolor">"click"</span>, displayDate); </span>
             </code>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" class="button" target="blank">Watch this code at work</a>
           <br>
         </div>
-        <p>The <code class="code-txt">addEventListener()</code> method attaches an event handler to the specified element.</p>
-        <p>The <code class="code-txt">addEventListener()</code> method attaches an event handler to an element without overwriting existing event handlers..</p>
+        <p>The <span class="code-txt">addEventListener()</span> method attaches an event handler to the specified element.</p>
+        <p>The <span class="code-txt">addEventListener()</span> method attaches an event handler to an element without overwriting existing event handlers..</p>
         <p>You can add many event handlers to one element.</p>
         <p>You can add many event handlers of the same type to one element, i.e two "click" events.</p>
         <p>You can add event listeners to any DOM object not only HTML elements. i.e the window object.</p>
@@ -989,7 +988,7 @@
         <p>You can easily remove an event listener by using the <code class="code-txt">removeEventListener()</code> method.</p>
         <h2>Syntax</h2>
           <div class="example-code">
-                <em>element</em>.addEventListener(<em>event, function, useCapture</em>);
+            <code><em>element</em>.addEventListener(<em>event, function, useCapture</em>);</code> 
           </div>
         <br>
         <p>The first parameter is the type of the event (like "<code class="code-txt">click</code> or <code class="code-txt">mousedown</code>" or any other<a href="#JS_HTML_DOM_Events" style="text-decoration-line: underline; color: slateblue;"> HTML DOM Event</a>.)</p>
@@ -1217,7 +1216,7 @@
           <li>Siblings (brothers or sisters) are nodes with the same parent</li>
         </ul>
 
-        <div style=" width: 80%; display: flex;">
+        <div id="nodenavi-div">
           <div style="width: 50%;">
             <div class="example-code">
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br><br>
@@ -1229,10 +1228,10 @@
               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>p<span class="tagcolor">&gt;</span></span>Hello world!<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
              &nbsp; <span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
              <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
-             </div>
+            </div>
           </div>
-          <div style="width: 50%; padding-left: 25px;">
-            <img style="margin-top:30px;width:362px;height:255px" src="https://www.w3schools.com/js/pic_navigate.gif" alt="Node tree">
+          <div style="width: 50%">
+            <img style="width:100%; height:100%" src="https://www.w3schools.com/js/pic_navigate.gif" alt="Node tree">
           </div>
         </div>
         <br>
@@ -1332,10 +1331,8 @@
               </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2" class="button" target="blank">Watch this code at work</a>
-          <br>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2" class="button" target="blank">Watch this code at work</a><br>
         </div>
 
         <div class="code-div">
@@ -1348,10 +1345,8 @@
               </span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/script<span class="tagcolor">&gt;</span></span><br><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3" class="button" target="blank">Watch this code at work</a>
-          <br>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3" class="button" target="blank">Watch this code at work</a><br>
         </div>
 
         <h2>InnerHTML</h2>
@@ -1384,12 +1379,9 @@
               <br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body" class="button" target="blank">Watch this code at work</a>
-          <br>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body" class="button" target="blank">Watch this code at work</a><br>
         </div>
-
         <div class="code-div">
           <h3>Example</h3>
           <div class="example-code">
@@ -1409,10 +1401,8 @@
               <br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span> </div>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document" class="button" target="blank">Watch this code at work</a>
-          <br>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document" class="button" target="blank">Watch this code at work</a><br>
         </div>
 
         <h2>The nodeName Property</h2>
@@ -1428,20 +1418,15 @@
         <div class="code-div">
           <h3>Example</h3>
           <div class="example-code">
-                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
-               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="id02"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor">innerHTML</span> <span class="jsnumbercolor">
-              </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id01"</span>).<span class="jspropertycolor" >nodeName</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename" class="button" target="blank">Watch this code at work</a>
-          <br>
+            <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="id02"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor">innerHTML</span> <span class="jsnumbercolor"></span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"id01"</span>).<span class="jspropertycolor" >nodeName</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename" class="button" target="blank">Watch this code at work</a><br>
         </div>
 
         <p class="highlight"><b>Note:</b> <span class="code-txt">nodeName</span> always contains the uppercase tag name of an HTML element.</p>
 
         <h2>The nodeValue Property</h2>
         <p>The <span class="code-txt">nodeValue</span> property specifies the value of a node.</p>
-
         <ul>
           <li>nodeValue for element nodes is <span class="code-txt">null</span></li>
           <li>nodeValue for text nodes is the text itself</li>
@@ -1456,10 +1441,8 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="attributecolor"> id<span class="attributevaluecolor" >="id01"</span></span><span class="tagcolor">&gt;</span></span>My First Page<span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="id02"</span></span><span class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor" >&lt;</span>script<span class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span class="jspropertycolor" >getElementById</span>(<span class="jsstringcolor">"id02"</span>).<span class="jspropertycolor">innerHTML</span> <span class="jsnumbercolor">
              </span> = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"id01"</span>).<span class="jspropertycolor" >nodeType</span>;<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor" >&gt;</span></span>
-          </div>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodetype" class="button" target="blank">Watch this code at work</a>
-          <br>
+          </div><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodetype" class="button" target="blank">Watch this code at work</a><br>
         </div>
 
         <p>The most important nodeType properties are:</p>
@@ -1563,7 +1546,7 @@
         </div>
 
         <h2>Removing Existing HTML Elements</h2>
-        <p>To remove an HTML element, use the <code class="code-txt">remove()</code> method:</p>
+        <p>To remove an HTML element, use the <span class="code-txt">remove()</span> method:</p>
 
         <div class="code-div">
           <h3>Example</h3>
@@ -1573,10 +1556,7 @@
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor" >="p1"</span></span><span class="tagcolor">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
               &nbsp;
               <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span class="attributevaluecolor">="p2"</span></span><span class="tagcolor">&gt;</span></span>This is another paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
-              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span><span class="jscolor"><br>
-                <span class="jskeywordcolor">var</span> elmnt = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"p1"</span>);<br><span class="jsnumbercolor">
-                </span>  elmnt.<span class="jspropertycolor">remove</span>();<br>
-                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+              <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/div<span class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="tagcolor">&gt;</span><span class="jscolor"><br><span class="jskeywordcolor">var</span> elmnt = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor" >"p1"</span>);<br><span class="jsnumbercolor"></span>  elmnt.<span class="jspropertycolor">remove</span>();<br></span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove" class="button" target="blank">Watch this code at work</a>
@@ -1585,7 +1565,7 @@
         <p class="highlight-red">The <span class="code-txt">remove()</span>  method does not work in older browsers, see the example below on how to use <span class="code-txt">removeChild()</span> instead.</p>
 
         <h2>Removing a Child Node</h2>
-        <p>For browsers that does not support the <code class="code-txt">remove()</code> method, you have to find the parent node to remove an element:</p>
+        <p>For browsers that does not support the <span class="code-txt">remove()</span> method, you have to find the parent node to remove an element:</p>
 
         <div class="code-div">
           <h3>Example</h3>
@@ -1647,35 +1627,25 @@
 
         <div class="code-div">
           <h3>Example</h3>
-              <p  class="code-p"><code><span class="jscolor">
-                <span class="jskeywordcolor">var</span>
-                x = document.<span class="jspropertycolor>getElementsByTagName</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor">
-                </span> </span>
-              </code>
-            </p>
-            <p>The elements in the collection can be accessed by an index number.</p>
-            <p>To access the second <span class="code-txt">&lt;p&gt;</span> element you can write:</p>
-              <p  class="code-p"><code><span class="jscolor">
-                y = x[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor" >
-                </span> </span>
-              </code>
-            </p>
-          <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection" class="button" target="blank">Watch this code at work</a>
-          <br>
+          <code class="code-p">
+            <span class="jscolor"><span class="jskeywordcolor">var</span> x = document.<span class="jspropertycolor>getElementsByTagName"</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor"></span> </span>
+          </code>
+          <p>The elements in the collection can be accessed by an index number.</p>
+          <p>To access the second <span class="code-txt">&lt;p&gt;</span> element you can write:</p>
+          <code class="code-p">
+            <span class="jscolor">y = x[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor"></span> </span>
+          </code><br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection" class="button" target="blank">Watch this code at work</a><br>
         </div>
-
         <p><b>Note:</b> The index starts at 0.</p>
-
         <h2>HTML HTMLCollection Length</h2>
         <p>The <span class="code-txt">length</span> property defines the number of elements in an <span class="code-txt">HTMLCollection:</span></p>
         <div class="code-div">
           <h3>Example</h3>
           <div class="example-code">
-            <span class="jscolor">
-              <span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br>
-              document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myCollection.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor">
-              </span> </span>
+            <code>
+              <span class="jscolor"><span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br> document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myCollection.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor"></span> </span>
+            </code>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_length" class="button" target="blank">Watch this code at work</a>
@@ -1685,11 +1655,9 @@
         <div class="code-div">
           <h3>Example</h3>
           <div class="example-code">
-            <span class="jscolor">
-              <span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br>
-              <span class="jskeywordcolor">var</span> i;<br>
-              <span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor" >0</span>; i &lt; myCollection.<span class="jspropertycolor" >length</span>; i++) {<br><span class="jsnumbercolor">
-              </span>&nbsp;&nbsp;myCollection[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span> </span>
+            <P>
+              <span class="jscolor"><span class="jskeywordcolor">var</span> myCollection = document.<span class="jspropertycolor">getElementsByTagName</span>(<span class="jsstringcolor" >"p"</span>);<br><span class="jskeywordcolor">var</span> i;<br><span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor" >0</span>; i &lt; myCollection.<span class="jspropertycolor" >length</span>; i++) {<br><span class="jsnumbercolor"></span>&nbsp;&nbsp;myCollection[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span> </span>
+            </P>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_htmlcollection_loop" class="button" target="blank">Watch this code at work</a>
@@ -1714,21 +1682,16 @@
         <p>The following code selects all <span class="code-txt">&lt;p&gt;</span> nodes in a document:</p>
         <div class="code-div">
           <h3>Example</h3>
-          <p class="code-p">
-            <code>
-              <span class="jscolor"><span class="jskeywordcolor">var</span> myNodeList = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor"></span></span>
-            </code>
-          </p>
+          <code class="code-p">
+            <span class="jscolor"><span class="jskeywordcolor">var</span> myNodeList = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor">"p"</span>);<span class="jsnumbercolor"></span></span>
+          </code>
           <p>The elements in the NodeList can be accessed by an index number.</p>
           <p>To access the second <span class="code-txt">&lt;p&gt;</span> element you can write:</p>
-          <p class="code-p">
-            <code>
-              <span class="jscolor">y = myNodeList[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor"></span></span>
-            </code>
-          </p>
+          <code class="code-p">
+            <span class="jscolor">y = myNodeList[<span class="jsnumbercolor">1</span>];<span class="jsnumbercolor"></span></span>
+          </code>
           <br>
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" class="button" target="blank">Watch this code at work</a>
-          <br>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" class="button" target="blank">Watch this code at work</a><br>
         </div>
         <p><b>Note:</b> The index starts at 0.</p>
         <h2>HTML DOM Node List Length</h2>
@@ -1736,10 +1699,9 @@
         <div class="code-div">
           <h3>Example</h3>
           <div class="example-code">
-            <span class="jscolor">
-              <span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br>
-              document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myNodelist.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor">
-              </span> </span>
+            <code>
+              <span class="jscolor"><span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br>document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor" >innerHTML</span> = myNodelist.<span class="jspropertycolor" >length</span>;<span class="jsnumbercolor"></span></span>
+            </code>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_length" class="button" target="blank">Watch this code at work</a>
@@ -1750,12 +1712,9 @@
           <h3>Example</h3>
           <p>Change the background color of all <span class="code-txt">&lt;p&gt;</span> elements in a node list:</p>
           <div class="example-code">
-            <span class="jscolor">
-              <span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br>
-              <span class="jskeywordcolor">var</span> i;<br>
-              <span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor">0</span>; i &lt; myNodelist.<span class="jspropertycolor">length</span>; i++) {<br><span class="jsnumbercolor">
-              </span>&nbsp; myNodelist[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span>
-            </span>
+            <p>
+              <span class="jscolor"><span class="jskeywordcolor">var</span> myNodelist = document.<span class="jspropertycolor">querySelectorAll</span>(<span class="jsstringcolor" >"p"</span>);<br><span class="jskeywordcolor">var</span> i;<br> <span class="jskeywordcolor">for</span> (i = <span class="jsnumbercolor">0</span>; i &lt; myNodelist.<span class="jspropertycolor">length</span>; i++) {<br><span class="jsnumbercolor"> </span>&nbsp; myNodelist[i].<span class="jspropertycolor">style</span>.<span class="jspropertycolor">backgroundColor</span> = <span class="jsstringcolor">"red"</span>;<br><span class="jsnumbercolor"></span>}<span class="jsnumbercolor"></span></span>
+            </p>
           </div>
           <br>
           <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_loop" class="button" target="blank">Watch this code at work</a>
@@ -1771,11 +1730,13 @@
         <p>HTMLCollection items can be accessed by their name, id, or index number.</p>
         <p>NodeList items can only be accessed by their index number.</p>
         <p>Only the NodeList object can contain attribute nodes and text nodes.</p>
-        <div class="highlight mar-1rm">
-          <p><b>A node list is not an array!</b></p>
-          <p>A node list may look like an array, but it is not.</p>
-          <p>You can loop through the node list and refer to its nodes like an array.</p>
-          <p>However, you cannot use Array Methods, like valueOf(), push(), pop(), or join() on a node list.</p>
+        <div class="highlight">
+          <div class="hglt-txt" style="width: 90%;">
+            <p><b>A node list is not an array!</b></p>
+            <p>A node list may look like an array, but it is not.</p>
+            <p>You can loop through the node list and refer to its nodes like an array.</p>
+            <p>However, you cannot use Array Methods, like valueOf(), push(), pop(), or join() on a node list.</p>
+          </div>
         </div>
       </section>
     </main>
